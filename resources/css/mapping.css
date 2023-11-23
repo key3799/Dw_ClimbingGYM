@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    margin:1rem;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.contents{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.menu-items{
+    margin-top: 1rem;
+}
+.menu-items p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.content-menu{
+    height: 50vh;
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    margin-left: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+
