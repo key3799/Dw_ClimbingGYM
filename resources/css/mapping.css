@@ -60,9 +60,8 @@
 #hiddenTab{
     display: none;
 }
-.centers{
+.center{
     list-style: none;
-
 }
 .list-content.active{
     display: block;
