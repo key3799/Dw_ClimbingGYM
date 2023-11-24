@@ -52,7 +52,7 @@
     margin-right: 1rem;
 }
 
-.list-item{
+.location li{
     list-style: none;
     cursor: pointer;
 }

@@ -3,20 +3,19 @@
 // 그러고 list-content에도 id 주고 onclick function줘서 
 // Id 부여한 map 호출?
 const hiddenTab = document.querySelector("#hiddenTab");
-document.querySelectorAll('li').forEach(function(li){
+document.querySelectorAll('li.seoul, li.gyungki, li.choongchung, li.jeonla, li.gyeongsang').forEach(function(li){
     li.addEventListener("click", function(event){
-        const clickedLi = event.currentTarget;
-        const targetLi = clickedLi.classList.contains('seoul');
-        if(targetLi){
-            if(hiddenTab.style.display === 'none'){
-                hiddenTab.style.display = 'block';
-            }else{
-                hiddenTab.style.display = 'none';
-            }
-        }
+        hiddenTabs();
     })
 })
 
+function hiddenTabs(){
+    if(hiddenTab.style.display === 'none' || hiddenTab.style.display === ''){
+        hiddenTab.style.display = 'block';
+    }else{
+        hiddenTab.style.display = 'none';
+    }
+}
 
 
 // 2. onclick this 이용해서 눌렀을때 각각의 list-content, map
