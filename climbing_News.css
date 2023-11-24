@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/* 메인 */
+
+.main-content{
+    display: flex;
+    height: 700px;
+    overflow: hidden;
+}
+
+.font-content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius:0px 50% 50% 0px;
+    height: 700px;
+    width: 43%;
+}
+
+.font-content>h1{
+    font-size: 50px;
+    margin-right: 10%;
+}
+
+.main-img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 뉴스 */
+
+.section-title >h3{
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+}
+
+.board-table{
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.board-table tr{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.board-table tr{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.board-table tr>td{
+    border-bottom: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+#dubble{
+    border: none;
+}
+
+.board-table .box-control{
+    display: flex;
+    justify-content: center;
+}
+
+.board-table .box{
+    position: relative;
+    width: 30px;
+    background-color: blue;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.box>span{
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    font-size: 12px;
+}
+
+.paging > ul{
+    list-style: none;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paging ul > li{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* 종목별 순위 */
+
+.ranking{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.rank-content{
+    margin-bottom: 40px;
+}
+
+.rank-title>h3{
+        font-size: 25px;
+        margin-bottom: 40px;
+}
+
+.rank-content>thead>tr{
+    border-top: 1px solid gray;
+}
+
