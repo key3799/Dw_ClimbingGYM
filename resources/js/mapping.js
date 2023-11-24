@@ -1,13 +1,26 @@
-document.querySelectorAll(".list-item").forEach(function(listItem){
-    listItem.addEventListener("click", function(){
-        const tabId = this.getAttribute("data-tab");
-        const listContent = document.getElementById("tabId");
-      
-      
-        document.querySelectorAll(".list-content").forEach(function(content){
-            content.classList.remove("active");
-        })
-        
-        listContent.classList.toggle("active");
+// 1. 각 list-item에 id부여해서 queryselectorAll로 호출
+// 각 ID에 onclick function 할당해서 .classList.toggle로 list-content display :none에서 block으로 변경
+// 그러고 list-content에도 id 주고 onclick function줘서 
+// Id 부여한 map 호출?
+const hiddenTab = document.querySelector("#hiddenTab");
+document.querySelectorAll('li').forEach(function(li){
+    li.addEventListener("click", function(event){
+        const clickedLi = event.currentTarget;
+        const targetLi = clickedLi.classList.contains('seoul');
+        if(targetLi){
+            if(hiddenTab.style.display === 'none'){
+                hiddenTab.style.display = 'block';
+            }else{
+                hiddenTab.style.display = 'none';
+            }
+        }
     })
-});
+})
+
+
+
+// 2. onclick this 이용해서 눌렀을때 각각의 list-content, map
+// 불러오기..
+
+// 3. 선생님한테 울면서 해달라고 하기.
+// 4. 나는 모르겠으니 조퇴하기
