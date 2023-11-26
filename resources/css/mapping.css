@@ -1,77 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    margin:1rem;
-    background-color: aliceblue;
-    text-align: center;
+.header {
+  margin: 1rem;
+  background-color: aliceblue;
+  text-align: center;
 }
 
-.contents{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
 }
 
-.menu-items{
-    margin-top: 1rem;
+.menu-items {
+  margin-top: 1rem;
 }
-.menu-items p{
-    font-size: 20px;
-    font-weight: 700;
+.menu-items p {
+  font-size: 20px;
+  font-weight: 700;
 }
-.content-menu{
-    height: 80vh;
-    background-color: #d9d9d9;
-    border: 1px solid black;
-    margin-left: 1rem;
+.content-menu {
+  height: 80vh;
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  margin-left: 1rem;
 }
 
-.content-maps{
-    background-color: #ccc;
+.content-maps {
+  background-color: #ccc;
 }
-.content-maps .title{
-    background-color: #eee;
-    border: 1px solid black;
+.content-maps .title {
+  background-color: #eee;
+  border: 1px solid black;
 }
-.content-map{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    height: 100%;
-    margin: 1rem;
+.content-map {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  margin: 1rem;
 }
 /* .content-map p{
     margin-bottom: 5rem;
 } */
-.content-advertise{
-    height: 80vh;
-    background-color: #d9d9d9;
-    border: 1px solid black;
-    margin-right: 1rem;
+.content-advertise {
+  height: 80vh;
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  margin-right: 1rem;
 }
 
-.location li{
-    list-style: none;
-    cursor: pointer;
+.location li {
+  list-style: none;
+  cursor: pointer;
 }
 
-#hiddenTab{
-    display: none;
+#locationWrapper {
+  display: hidden;
 }
-.center{
-    list-style: none;
+
+#locationWrapper > div {
+  cursor: pointer;
 }
-.list-content.active{
-    display: block;
+.center {
+  list-style: none;
 }
-.map{
-    display: none;
+.list-content.active {
+  display: block;
 }
-.footer{
-    background-color: antiquewhite;
-    margin: 1rem;
-    border-radius: 2rem;
-    text-align: center;
+.maps {
+  /* display: none; */
+}
+.footer {
+  background-color: antiquewhite;
+  margin: 1rem;
+  border-radius: 2rem;
+  text-align: center;
 }
