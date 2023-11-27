@@ -24,7 +24,6 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -10;
 }
 
 .site__header {
@@ -33,6 +32,7 @@ main {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .site__header:hover {
@@ -241,7 +241,13 @@ main {
 /* 게시판 */
 
 .sub-container {
+  position: relative;
+  margin: 0 auto;
   width: 60%;
+  margin-top: 500px;
+}
+.sub-container > table {
+  position: relative;
   margin: 0 auto;
 }
 .board-table tr {
@@ -275,4 +281,35 @@ main {
   margin: 1rem;
   display: flex;
   align-items: center;
+}
+.banner {
+  background-color: dodgerblue;
+}
+.best {
+  margin-right: 1rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.banner-tab {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.member {
+  display: flex;
+  width: 267px;
+}
+.best-photos {
+  margin-top: 1rem;
+  background-color: #2e2e2e;
+  color: white;
+}
+.photos {
+  display: flex;
+  gap: 1rem;
+}
+.best-photo {
+  margin-left: 1rem;
+  width: 400px;
+  height: 400px;
 }

@@ -124,35 +124,132 @@
       </div>
     </main>
 
-    <!-- 
     <div class="sub-container">
-        <table class="board-table">
-            <tbody>
-                <tr>
-                    <td class="box-control">
-                        <div class="box"></div>11월 셋째주 정모 
-                    </td>
-                    <td class="box-control">
-                        <div class="box"></div>11월 클라이밍 아마추어 교육
-                    </td>
-                    <td>공지사항(세부공지 확인)</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="paging">
-            <ul>
-                <li class="before pager"><iconify-icon icon="ooui:next-rtl"></iconify-icon></iconify-icon><a
-                        href="#"></a></li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li class="next pager"><iconify-icon icon="ooui:next-ltr"></iconify-icon></iconify-icon><a
-                        href="#"></a></li>
+      <table class="board-table">
+        <tbody>
+          <tr>
+            <td class="box-control">
+              <div class="box"></div>11월 셋째주 정모 
+            </td>
+            <td class="box-control">
+              <div class="box"></div>11월 클라이밍 아마추어 교육
+            </td>
+            <td>공지사항(세부공지 확인)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="paging">
+        <ul>
+          <li class="before pager"><iconify-icon icon="ooui:next-rtl"></iconify-icon></iconify-icon><a
+            href="#"></a></li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="next pager"><iconify-icon icon="ooui:next-ltr"></iconify-icon></iconify-icon><a
+              href="#"></a></li>
             </ul>
+          </div>
         </div>
-    </div> -->
-  </body>
+        <!-- banner의 height, width, display 값 조정 필요 -->
+        <div class="banner">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="slide (1).jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="slide (2).jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="slide (3).jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="banner-tab">
+          <table class="board-table">
+            <tbody>
+              <tr>
+                <td class="box-control2">
+                  <div class="box"></div>자유게시판 <span style="margin-left: 100px;">더보기</span>
+                </td>
+                <td class="box-control2">
+                  <div class="box"></div><span class="best">공지</span>회원님들의 자유게시판 이용... 
+                </td>
+                <td class="box-control2">
+                  <div class="box"></div><span class="best">Best</span>클라이밍 3년차 뉴비가 추천하는...
+                </td>
+                <td><span><strong>18:20</strong></span>안녕하세요. 가입했습니다. 혹시...</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- member display 값 조정 필요-->
+          <div class="member-photo">
+            <tr>
+              <td class="box-control2">
+                <div class="box"></div>회원사진 <span style="margin-left: 100px;">더보기</span>
+              </td>
+            </tr>
+            <div class="member">
+              <img style="max-width: 100%;" src="slide (1).jpg" alt="">
+              <img style="max-width: 100%;" src="slide (2).jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- 크기 조정 필요 -->
+        <div class="best-photos">
+          <div class="photo-header">
+            Best photo
+          </div>
+          <div class="best-photo">
+            <div class="photos">
+              <div class="photo">
+                <img style="max-width: 100%;" src="slide (1).jpg" alt="">
+                photographer : 밍밍이
+              </div>
+            <div class="photos">
+              <div class="photo">
+                <img style="max-width: 100%;" src="slide (2).jpg" alt="">
+                photographer : 닝닝이
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="mapping-tab">
+          클라이밍지점
+          <div class="locationWrapper">
+            <div class="location">서울</div>
+            <div class="location">경기</div>
+            <div class="location">서울</div>
+            <div class="location">경기</div>
+            <div class="location">서울</div>
+            <br/>
+            <div class="location">경기</div>
+            <div class="location">서울</div>
+            <div class="location">경기</div>
+            <div class="location">서울</div>
+            <div class="location">경기</div>
+          </div>
+        </div>
+      </body>
 
+
+
+
+
+
+
+   
   <script>
     function toggleNewMenu() {
       var newMenu = document.querySelector(".new-menu");
