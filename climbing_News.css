@@ -124,16 +124,168 @@
     margin: 0 auto;
 }
 
-.rank-content{
-    margin-bottom: 40px;
+.rank-title > h3{
+    font-size: 20px;
+    text-align: center;
+    padding: 40px;
 }
 
-.rank-title>h3{
-        font-size: 25px;
-        margin-bottom: 40px;
+
+.rank-body{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    padding-bottom: 20px;
 }
 
-.rank-content>thead>tr{
-    border-top: 1px solid gray;
+.rank-contant{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    position: relative;
 }
 
+.rank-contant img{
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    margin: -5px 0px 0px -25px;
+    object-fit: cover;
+}
+
+.rank-contant #head{
+    font-weight: 600;
+    border-bottom: 1px solid gray ;
+}
+
+.rank-contant li{
+   padding: 1rem;
+}
+
+.event-header{
+    padding: 50px;
+    text-align: center;
+}
+
+.section-title > span{
+    font-size: 70px;
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid blue;
+}
+
+#event-text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.event-container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-wrap > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.post-img{
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.content-wrap{
+    position: relative;
+}
+.event-title{
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: 400px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+figure{
+    position: relative;
+}
+
+.days{
+    position: absolute;
+    text-decoration: none;
+    color: aliceblue;
+    top: 15px;
+    left: 15px;
+}
+
+.point{
+    color: blue;
+}
+
+.days h1{
+    font-size: 60px;
+}
+
+.days span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.movie{
+    margin-top: 220px;
+}
+
+.movie-title{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.movie-container{
+    padding: 40px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie-content{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 180px;
+}
+
+
+.movie-content figure h3{
+    font-size: 1.5rem;
+}
+
+.movie-img{
+    max-width: 200%;
+    width: 1200px;
+    height: 300px;
+}
+
+.movie-img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 2;
+}
