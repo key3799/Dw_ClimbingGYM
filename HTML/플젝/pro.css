@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bgImage {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.site__header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.site__header:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.site__header:hover .menu-item {
+  color: rgb(105, 105, 105);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.menu li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  transition: all 200ms linear;
+  text-decoration: none;
+}
+
+.menu-item::before,
+.menu-item::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 4px;
+  background-color: dodgerblue;
+  transition: width 200ms linear;
+}
+
+.menu-item:hover::before,
+.menu-item:hover::after {
+  width: 100%;
+}
+
+.menu-item.active::before {
+  transform: translateY(0);
+  background-color: dodgerblue;
+  z-index: -1;
+}
+
+/* Added styles for hover effect */
+.menu-item:hover {
+  color: dodgerblue;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.brand {
+  font-size: 1rem;
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+.carousel-item img {
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.carousel-item > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+}
+
+.carousel-item > img {
+  width: 70%;
+  height: 70%;
+}
+
+.new-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(216, 216, 216);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  opacity: 90%;
+}
+
+.show-new-menu {
+  display: flex;
+}
+
+.new-menu-item {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  transition: background-color 200ms linear;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}
+
+.new-menu-item:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.close-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.new-menu:hover .close-icon {
+  display: block;
+}
+
+.close-icon:hover {
+  color: black;
+}
+
+/* 새메인 */
+
+/* .content-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-section ul {
+    list-style: none;
+}
+
+
+.content-section {
+    position: relative;
+    margin-top: 700px; 
+}
+
+
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.conWrp {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.conWrp h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.conWrp ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conWrp li {
+    margin-bottom: 10px;
+}
+
+.conWrp a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.conWrp a:hover {
+    text-decoration: underline;
+} */
+
+/* 게시판 */
+
+.sub-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.board-table tr {
+  display: flex;
+  flex-direction: column;
+}
+.board-table tr {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.board-table tr > td {
+  border-bottom: 1px solid black;
+  padding: 12px;
+  text-align: center;
+}
+
+.box > span {
+  position: absolute;
+  top: 2px;
+  left: 7px;
+  font-size: 12px;
+}
+.paging > ul {
+  list-style: none;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.paging ul > li {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
