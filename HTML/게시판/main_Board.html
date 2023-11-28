@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_Board.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>board</title>
+</head>
+
+<body>
+    <div class="nav"></div>
+    <div class="container">
+        <div class="left-menu">
+            <div class="board"><h1>게시판</h1></div>
+            <div class="menu">
+                <div class="menu-name">
+                    <div class="menu-item click">
+                        <span>공지사항</span>
+                        <iconify-icon  icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item">
+                        <span>자유게시판</span>
+                        <iconify-icon  icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item">
+                        <span>클라이밍 TIP 공유</span>
+                        <iconify-icon  icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item">
+                        <span>활동 사진</span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="item-name">
+                <h1>공지사항</h1>
+            </div>
+            <div class="search-box">
+                <p class="search-inner">
+                    <input type="text" placeholder="검색어 입력">
+      <img class="absolute" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+                </p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <tbody id="item-list">
+                        <tr class="thead">
+                            <td>번호</td>
+                        <td id="link">제목</td>
+                        <td>작성자</td>
+                        <td>작성일</td>
+                        <td>조회수</td>
+                        <td>추천수</td>
+                        </tr>
+                        <tr class="pin">
+                            <td>
+                                <iconify-icon icon="bi:pin-fill"></iconify-icon>
+                            </td>
+                            <td id="link"><a href="">	
+                                [이벤트] 클라이머라면 200% 공감! <좋아하는 마음엔 실패가 없지></a></td>
+                            <td>	
+                                CLMI클미</td>
+                            <td>16:17</td>
+                            <td>45</td>
+                            <td>1</td>
+                        </tr>
+                        <tr class="pin">
+                            <td>
+                                <iconify-icon icon="bi:pin-fill"></iconify-icon>
+                            </td>
+                            <td id="link"><a href="">볼더랜드 블랙프라이데이 세일(~11/30)</a></td>
+                            <td>	
+                                볼더랜드</td>
+                            <td>2023-11-23</td>
+                            <td>357</td>
+                            <td>10</td>
+                        </tr>
+                        <tr class="pin">
+                            <td>
+                                <iconify-icon icon="bi:pin-fill"></iconify-icon>
+                            </td>
+                            <td id="link"><a href="">요즘 인스타 라스포르티바 광고 조심하세요</a></td>
+                            <td>스파이더맨</td>
+                            <td>2023-11-23</td>
+                            <td>190</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="link"><a href="">	
+                                처음 클라이밍 하는 지인에게 보여드리기 좋은 영상&정보 [55]</a></td>
+                            <td>노원구 빨간바지</td>
+                            <td>2022-11-30</td>
+                            <td>2,463</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="link"><a href="">필독📢클라이밍에 미치다 카페 게시판 이용 및 등업 안내 [1478]</a></td>
+                            <td>	
+                                매니저A</td>
+                            <td>2023-06-18</td>
+                            <td>987</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td id="link"><a href="">	
+                                마그네슘 스프레이???
+                                </a></td>
+                            <td>	
+                                매니저A</td>
+                            <td>2023-11-23</td>
+                            <td>265</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td id="link"><a href="">5주년 볼더링 파티 초대합니다
+                            </a></td>
+                            <td>무bbbbb</td>
+                            <td>2023.11.16</td>
+                            <td>338</td>
+                            <td>25</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <section class="footer">
+            <div class="footer-main">
+                <div class="footer-header">
+            <h1>DW CLIMB community</h1>
+            <p>World's remier climbing community</p>
+            <div class="footer-icon">
+                <a href="#"><iconify-icon class="sns" icon="basil:facebook-solid"></iconify-icon></a>
+                <a href="#"><iconify-icon class="sns"icon="mdi:instagram"></iconify-icon></a>
+                <a href="#"><iconify-icon class="sns"icon="mdi:twitter"></iconify-icon></a>
+            </div>
+        </div>
+            <div class="footer-body">
+                <ul>
+                    <li>개인정보처리방침</li>
+                    <li>이용약관</li>
+                    <li>자주묻는질문</li>
+                    <li>문의하기</li>
+                </ul>
+                <div class="footer-name">
+                    <p>Copyright © 2013 Daejeon Climb. All rights reserved</p>
+                    <p>Dw아카데미 데이터 시각화 2회차</p>
+                    <p>관리자 : 김원상 이건희 황승빈 조에스더</p>
+                 </div>
+            </div>
+            
+        </div>
+        </section>
+</body>
+
+</html>
