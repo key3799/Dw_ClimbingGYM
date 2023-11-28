@@ -283,7 +283,13 @@ main {
   align-items: center;
 }
 .banner {
-  background-color: dodgerblue;
+  width: 1128px;
+  margin: 0 auto;
+}
+.banner > video{
+  width: 1128px;
+  height: 800px;
+  object-fit: cover;
 }
 .best {
   margin-right: 1rem;
@@ -292,24 +298,103 @@ main {
 }
 .banner-tab {
   display: flex;
+  width: 1128px;
   margin: 0 auto;
   margin-top: 1rem;
+}
+.member-photo{
+  margin-left: 17.5rem;
 }
 .member {
   display: flex;
   width: 267px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .best-photos {
-  margin-top: 1rem;
+  width: 1128px;
+  margin-top: 10rem;
+  margin: 0 auto;
   background-color: #2e2e2e;
   color: white;
 }
+
 .photos {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 1128px;
+  margin: 0 auto;
+}
+.photo{
+  width: 500px;
+  margin-left: 1rem;
+}
+.photo > p{
+  font-weight: 700;
+  background-color: dodgerblue;
+  text-align: center;
+  padding: 8px;
 }
 .best-photo {
   margin-left: 1rem;
-  width: 400px;
+  width: 1128px;
   height: 400px;
+}
+
+.mapping-tab{
+  /* background-color: aliceblue; */
+  width: 1128px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+.locationWrapper{
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  background-color: antiquewhite;
+  padding: 2rem;
+}
+.location{
+  border: 2px solid #e2e2e2;
+  background-color: #2e2e2e;
+  color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.community-tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  height: 250px;
+  font-size: 46px;
+  font-weight: 700;
+  color: white;
+}
+.community-tab > p {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
