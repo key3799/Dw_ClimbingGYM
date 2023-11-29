@@ -16,18 +16,27 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </head>
   <body>
     <main>
       <header class="site__header">
-        <h2 class="brand">
+        <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
           DW CLIMB
-          <div>community</div>
+          <div>Community</div>
         </h2>
         <nav>
           <ul class="menu">
-            <li><a class="menu-item" href="#"> 클라이밍소개</a></li>
+            <li>
+              <a class="menu-item" href="#"> 클라이밍소개</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#">클라이밍이란?</a>
+                </li>
+                <li>
+                  <a href="#">무엇일까요~?</a>
+                </li>
+              </ul>
+            </li>
             <li><a class="menu-item" href="#">클라이밍소식</a></li>
             <li><a class="menu-item" href="#">게시판</a></li>
             <li><a class="menu-item" href="mapping.html">매칭</a></li>
@@ -35,11 +44,11 @@
             <li><a class="menu-item" href="#">회원 가입</a></li>
           </ul>
         </nav>
-        <!-- <div class="menu-icon active" onclick="toggleNewMenu()"> -->
         <div
           id="burger-icon"
           class="menu-icon active"
           onclick="toggleNewMenu()"
+          style="cursor: pointer"
         >
           &#9776;
         </div>
@@ -59,12 +68,13 @@
             <li><a class="new-menu-item" href="#">클라이밍 소개</a></li>
             <li><a class="new-menu-item" href="#">클라이밍 소식</a></li>
             <li><a class="new-menu-item" href="#">게시판</a></li>
-            <li><a class="new-menu-item" href="#">매칭</a></li>
+            <li><a class="new-menu-item" href="#">마이페이지</a></li>
+            <li><a class="new-menu-item" href="#">Q&A</a></li>
           </ul>
         </nav>
       </header>
       <!-- ⭐ 영역 고쳐야함 -->
-      <div class="bgImage">
+      <div class="bgImage" id="bgImage">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -246,7 +256,6 @@
         </div>
       </div>
     </div>
-
     <div class="mapping-tab">
       클라이밍지점
       <div class="locationWrapper">
@@ -267,11 +276,12 @@
       Dw Academy 데이터시각화 2회차 <br />관리자 : 김원상 이건희 황승빈 조에스더
     </footer>
   </body>
-
+  <script src="script.js"></script>
   <script>
     function toggleNewMenu() {
       var newMenu = document.querySelector(".new-menu");
       newMenu.classList.toggle("show-new-menu");
+      const bgImage = document.getElementById("bgImage");
 
       // 햄버거 버튼과 X 버튼 전환
       var burgerIcon = document.getElementById("burger-icon");
@@ -280,6 +290,8 @@
       closeIcon.classList.toggle("active");
       burgerIcon.classList.toggle("inactive");
       closeIcon.classList.toggle("inactive");
+      newMenu.classList.toggle("active");
+      bgImage.classList.toggle("menu-open");
       // burgerIcon.style.display = newMenu.classList.contains("show-new-menu")
       //   ? "none"
       //   : "block";
