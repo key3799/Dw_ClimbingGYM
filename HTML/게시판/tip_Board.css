@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@200;400;700&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
 }
+
 
 .container{
     width: 80%;
@@ -53,93 +57,70 @@
 }
 
 .content{
-    margin: 250px 0;
-    width: 80%;
+    /* margin: 3rem auto; */
 }
 
-.item-name{
+.title{
     text-align: center;
+    margin: 2rem;
 }
 
-.search-box{
-    width: 100%;
+.list{
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    padding: 1rem;
+    
 }
-
-.search-inner{
-    text-align: end;
-    padding: 30px 120px; 
-    position: relative;
-}
-
-.absolute{
-  position: absolute;
-  top: 38px;
-  right: 130px;
-}
-
-input {
-    border: 1px solid #bbb;
+.list-item{
+    box-shadow: 0 0 0 3px rgb(200,200,200) ;
     border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-  
-  img {
-    width: 17px;
-    top: 10px;
-    right: 12px;
-  }
-
-.table-wrap{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
+    padding: 8px;
 }
 
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    font-size: 13px;
-    width: 100%;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-  }
+.list-item > h2{
+    padding: 3px;
+    font-size: 1.2rem;
+}
 
+.text{
+    opacity: 0;
+}
 
-  #link{
-    width: 430px;
-    padding-left: 20px;
-  }
+.text.visible {
+    opacity: 1;
+}
 
-  td:first-child,
-  td:nth-child(2),
-  td:nth-child(3),
-  td:nth-child(4),
-  td:nth-child(5),
-  td:nth-child(6){
-    text-align: center;
-    padding: 30px 0px;
-  }
+.list-item.selected{
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+    padding: 12px; 
+}
 
-th{ 
-    background-color: #d3d3d3 ; 
-    border-top: 3px solid #727272;
-    }
+.list-item .content{
+    display: none;
+}
 
+.list-item.selected .content{
+    display: block;
+}
 
-th, td {
-    border-bottom: 1px solid #d3d3d3;
-    padding: 30px;
-    }
+.list-item .icon{
+    transform: rotate(0deg);
+}
+.list-item.selected .icon{
+    transform: rotate(180deg);
+}
 
-a{
-    color: black;
-    text-decoration-line : none;
+#source{
+    padding: 0px 15px;
+    font-size: 11px;
+    text-align: end;
 }
 
 .footer{
     background-color: black;
     color: white;
+    margin-top: 2rem;
 }
 
 .footer-main{
@@ -187,4 +168,3 @@ a{
     text-align: end;
     margin-right: 80px;
 }
-
