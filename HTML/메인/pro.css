@@ -22,7 +22,6 @@ main {
   /* position: relative; */
 }
 
-
 /* .right-banner{
   background-color: #ebf0ff;
   width: 200px;
@@ -117,12 +116,12 @@ main {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .menu-item1:hover ~ .sub-menu1,
-.menu-item2:hover ~ .sub-menu2{
+.menu-item2:hover ~ .sub-menu2 {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
-.sub-menu{
+.sub-menu {
   display: none;
   position: absolute;
   top: 80px;
@@ -133,21 +132,21 @@ main {
   opacity: 0;
   transform: translateY(10px);
 }
-.sub-menu2{
+.sub-menu2 {
   display: none;
   position: absolute;
   top: 80px;
   left: 288px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.sub-menu a{
+.sub-menu a {
   text-decoration: none;
   color: white;
 }
 .brand {
   font-size: 1rem;
 }
-#burger-icon{
+#burger-icon {
   position: relative;
   right: 30px;
 }
@@ -187,7 +186,7 @@ main {
   overflow-y: auto;
   opacity: 90%;
 }
-.menu-open{
+.menu-open {
   pointer-events: none;
 }
 .show-new-menu {
@@ -289,29 +288,54 @@ main {
 } */
 
 /* 게시판 */
-.left-banner-container{
+.left-banner-container {
   float: left;
   width: 200px;
   margin-left: 5rem;
+  margin-top: 2rem;
 }
-.left-banner{
-  background-color: #0074cc;
+.left-banner {
+  background-color: #19253d;
   width: 200px;
   height: 2000px;
   border: 1px solid black;
 }
-.right-banner-container{
+.banner-loginBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+.banner-descs {
+  margin: 0.7rem;
+  width: 180px;
+  text-align: start;
+}
+.banner-desc {
+  max-width: 178px;
+  background-color: #19253d;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.right-banner-container {
   float: right;
   width: 200px;
   margin-right: 5rem;
+  margin-top: 2rem;
 }
-.right-banner{
-  background-color: #0074cc;
+.right-banner {
+  /* background-color: #0074cc; */
+  background-color: #19253d;
   width: 200px;
   height: 2000px;
   border: 1px solid black;
 }
-
+.timer {
+  /* border: 1px solid black; */
+}
 .sub-container {
   position: relative;
   text-align: center;
@@ -320,7 +344,7 @@ main {
 .sub-container > table {
   position: relative;
 }
-.board-table{
+.board-table {
   display: inline-block;
   margin: 0 auto;
 }
@@ -360,7 +384,7 @@ main {
   width: 1128px;
   margin: 0 auto;
 }
-.banner > video{
+.banner > video {
   width: 1128px;
   height: 800px;
   object-fit: cover;
@@ -376,7 +400,7 @@ main {
   /* margin: 0 auto; */
   margin-top: 1rem;
 }
-.member-photo{
+.member-photo {
   margin-left: 17.5rem;
 }
 .member {
@@ -400,11 +424,11 @@ main {
   width: 100%;
   margin: 0 auto;
 }
-.photo{
+.photo {
   width: 500px;
   margin-left: 1rem;
 }
-.photo > p{
+.photo > p {
   font-weight: 700;
   background-color: dodgerblue;
   text-align: center;
@@ -416,7 +440,7 @@ main {
   height: 400px;
 }
 
-.mapping-tab{
+.mapping-tab {
   /* background-color: aliceblue; */
   width: 1128px;
   margin: 0 auto;
@@ -425,14 +449,14 @@ main {
   font-size: 24px;
   font-weight: 700;
 }
-.locationWrapper{
+.locationWrapper {
   width: 100%;
   display: flex;
   margin-top: 1rem;
   background-color: antiquewhite;
   padding: 2rem;
 }
-.location{
+.location {
   border: 2px solid #e2e2e2;
   background-color: #2e2e2e;
   color: white;
@@ -445,12 +469,13 @@ main {
   cursor: pointer;
 }
 
-.community-tab{
+.community-tab {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: dodgerblue;
+  width: 100%;
   height: 250px;
   font-size: 46px;
   font-weight: 700;
@@ -461,7 +486,7 @@ main {
   font-weight: normal;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   font-size: 14px;
