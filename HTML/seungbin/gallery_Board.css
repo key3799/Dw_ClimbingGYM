@@ -50,10 +50,6 @@
     margin-right: 10px;
   }
   
-
-.click{
-    color: blue;
-}
 .content{
     width: 67%;
     margin: 81px auto;
@@ -130,3 +126,14 @@ img{
     background-color: #fff;
     color: #333;
 }
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.click:hover{
+    background-color: #0074CC;
+    color: white;
+}
+ 

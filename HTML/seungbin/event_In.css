@@ -95,10 +95,20 @@ body {
     border-radius: 10px;
   }
 
+  .register-button{
+    padding: 12px;
+    transition: all 0.2s ease;
+  }
   .register-button:hover {
     background-color: #555;
   }
   
+img{
+  height: 450px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
   /* 푸터 스타일 */
   footer {
     background-color: #333;
