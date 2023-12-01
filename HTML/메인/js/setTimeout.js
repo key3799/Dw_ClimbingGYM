@@ -13,5 +13,5 @@ for (let i = 0; i < dataList.length; i++) {
       index = index + step;
     }
     timerText.textContent = index;
-  }, 1);
+  }, 10);
 }
