@@ -144,6 +144,9 @@ main {
   width: 200px;
   height: 100px;
   background-color: #545775;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
   padding: 1rem;
   opacity: 0;
   transform: translateY(10px);
@@ -312,8 +315,7 @@ main {
 .left-banner-container {
   float: left;
   width: 200px;
-  margin-left: 5rem;
-  margin-top: 2rem;
+  margin-left: 2rem;
 }
 .left-banner {
   background-color: #19253d;
@@ -326,8 +328,10 @@ main {
   align-items: center;
   justify-content: center;
   margin: 1rem;
-  gap: 1rem;
+  margin-bottom: 2rem;
+  gap: 0.3rem;
   cursor: pointer;
+  color: white;
 }
 .banner-descs {
   margin: 0.7rem;
@@ -346,8 +350,7 @@ main {
   top: 2rem;
   width: 200px;
   height: 500px;
-  margin-right: 5rem;
-  margin-top: 2rem;
+  margin-right: 2rem;
 }
 .right-banner {
   width: 200px;
@@ -358,9 +361,15 @@ main {
   height: 500px;
   object-fit: cover;
 }
-.timer {
-  /* border: 1px solid black; */
+.data-counters{
+  background-color: #19253d;
+  font-weight: 700;
+  color: white;
+  max-width: 1128px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
+
 .sub-container {
   position: relative;
   text-align: center;
@@ -421,9 +430,10 @@ main {
 }
 .banner-tab {
   display: flex;
-  width: 1128px;
-  /* margin: 0 auto; */
+  max-width: 1128px;
+  margin: 0 auto;
   margin-top: 1rem;
+  
 }
 .member-photo {
   margin-left: 17.5rem;
