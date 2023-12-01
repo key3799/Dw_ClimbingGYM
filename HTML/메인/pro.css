@@ -65,6 +65,15 @@ main {
   height: 64px;
   position: relative;
 }
+.menu-item1:hover .sub-menu1,
+.menu-item2:hover .sub-menu2,
+.menu-item3:hover .sub-menu3,
+.menu-item4:hover .sub-menu4
+{
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .menu li {
   height: 100%;
@@ -121,24 +130,30 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
-.sub-menu {
+.sub-menu1, 
+.sub-menu2, 
+.sub-menu3, 
+.sub-menu4 {
   display: none;
   position: absolute;
-  top: 80px;
-  left: 31px;
-  background-color: #2e2e2e;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 0.8rem;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background-color: #545775;
+  padding: 1rem;
   opacity: 0;
   transform: translateY(10px);
+  transition: opacity 200ms, transform 200ms;
 }
-.sub-menu2 {
+
+/* .sub-menu2 {
   display: none;
   position: absolute;
   top: 80px;
   left: 288px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 .sub-menu a {
   text-decoration: none;
   color: white;
@@ -332,6 +347,11 @@ main {
   width: 200px;
   height: 2000px;
   border: 1px solid black;
+}
+.right-banner img{
+  width: 250px;
+  height: 500px;
+  object-fit: cover;
 }
 .timer {
   /* border: 1px solid black; */
