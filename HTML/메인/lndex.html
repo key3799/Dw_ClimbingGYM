@@ -16,14 +16,20 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </head>
   <body>
     <main>
       <header class="site__header">
-        <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
-          DW CLIMB
-          <div>Community</div>
-        </h2>
+        <a
+          style="color: black; text-decoration: none"
+          href="http://127.0.0.1:5501/lndex.html#"
+        >
+          <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+            DW CLIMB
+            <div>Community</div>
+          </h2>
+        </a>
         <nav>
           <ul class="menu">
             <li>
@@ -156,12 +162,49 @@
     <!--⭐ header position 내려도 위에 고정되게 하기 ✔-->
     <div class="sub-container">
       <div class="left-banner-container">
-        <div class="left-banner"></div>
+        <div class="left-banner">
+          <div class="banner-loginBox">
+            <!-- 아이콘 + 박스 -->
+            <iconify-icon
+              icon="material-symbols:login"
+              rotate="-180deg"
+              style="top: 20px"
+            ></iconify-icon>
+            Login
+          </div>
+          <input
+            style="width: 180px"
+            type="text"
+            placeholder="DWClimbing 통합검색"
+          />
+          <div class="banner-tab-container">
+            <div class="banner-descs">
+              <div class="banner-desc">클라이밍 소개</div>
+              <div class="banner-desc">이달의 소식</div>
+              <div class="banner-desc">자유게시판</div>
+              <div class="banner-desc">가까운 지점 찾기</div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="right-banner-container">
         <div class="right-banner"></div>
       </div>
-      <table class="board-table">
+      <div class="data-counters">
+        <div class="timer" data-counter="600">
+          전국 클라이밍 암장 개 수 <span class="timers">0</span>개 이상
+        </div>
+        <div class="timer" data-counter="200">
+          홈페이지가 개설된 지
+          <span class="timers">0</span>일 째
+        </div>
+        <div class="timer" data-counter="5500000">
+          2023.12.01 DW Commuity커뮤니티 회원 수
+          <span class="timers">0</span>만명
+        </div>
+        <h2>빠르게 성장 중인 우리 커뮤니티 으쌰으쌰 홍두깨</h2>
+      </div>
+      <!-- <table class="board-table">
         <tbody>
           <tr>
             <td class="box-control">
@@ -175,8 +218,8 @@
             <td>공지사항(세부공지 확인)</td>
           </tr>
         </tbody>
-      </table>
-      <div class="paging">
+      </table> -->
+      <!-- <div class="paging">
         <ul>
           <li class="before pager">
             <iconify-icon icon="ooui:next-rtl"></iconify-icon><a href="#"></a>
@@ -188,7 +231,7 @@
             <iconify-icon icon="ooui:next-ltr"></iconify-icon><a href="#"></a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
     <div class="banner">
       <!-- ⭐ img 말고 Youtube 동영상 ✔ -->
@@ -291,6 +334,7 @@
     </footer>
   </body>
   <script src="script.js"></script>
+  <script src="/js/setTimeout.js"></script>
   <script>
     function toggleNewMenu() {
       var newMenu = document.querySelector(".new-menu");
