@@ -8,6 +8,14 @@ const locationTabs = document.querySelectorAll(".location li");
 const locationTab = document.querySelectorAll("#locationWrapper > div");
 const maps = document.querySelectorAll(".maps .map");
 
+locationTab.forEach(function (desc) {
+  desc.style.display = "none";
+});
+
+maps.forEach(function (map) {
+  map.style.display = "none";
+});
+
 locationTabs.forEach(function (click, index) {
   click.addEventListener("click", function () {
     locationTab.forEach(function (content) {
