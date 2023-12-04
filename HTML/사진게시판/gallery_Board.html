@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery_Board.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>사진게시판</title>
+</head>
+
+<body>
+    <div class="nav"></div>
+    <div class="container">
+        <div class="left-menu">
+            <div class="board">
+                <h1>게시판</h1>
+            </div>
+            <div class="menu">
+                <div class="menu-name">
+                    <div class="menu-item">
+                        <span><a href="main_Board.html">공지사항</a></span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item">
+                        <span><a href="free_Board.html">자유게시판</a></span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item click">
+                        <span><a href="tip_Board.html">클라이밍 꿀팁</a></span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item">
+                        <a href="gallery_Board.html"><span>활동 사진</span></a>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <iconify-icon id="icon" icon="ion:camera-sharp"></iconify-icon>
+                <h1>사진게시판</h1>
+            </div>
+            <div class="img-container">
+                <div class="img-content">
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/1.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">천안 우동소</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/2.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">딩가동</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/3.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">조아조아클라이밍</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+
+                        </figure>
+                    </div>
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/4.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">올라가라더높게</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/5.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">스파이더맨이꿈</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/6.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">홀로 우뚝선다</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/7.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">~~~~</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="img-box">
+                        <figure>
+                            <img src="gallery/8.jpg" alt="동호회사진">
+                            <div class="explan">
+                                <p id="cm-title">~~~~</p>
+                                <p id="cm-day">2023/11/29</p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="add-picture">
+                    <button id="add-modal">
+                        사진 추가 하기
+                    </button>
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <span><input type="file" id="image-input"></span>
+
+                        <p><input type="text" id="image-name" placeholder="제목을 입력하세요"></p>
+                        <p><input type="date" id="upload-day"></p>
+
+                        <button id="add-image">게시물 추가</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+</body>
+<script src="gallery_Board.js"></script>
+
+</html>
