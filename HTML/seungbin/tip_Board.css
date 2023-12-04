@@ -87,12 +87,17 @@
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 20px;
-    cursor: pointer;
     transition: box-shadow 0.3s ease;
   }
   
   .list-item:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .list-item h2{
+    cursor: pointer;
+    border: 4px solid orange;
+    border-radius: 8px;
   }
   
   .list-item.selected {
@@ -116,8 +121,10 @@
     transform: rotate(180deg);
   }
   
+
   .video {
     display: none;
+    margin-top: 20px;
   }
   
   .selected .video {
@@ -130,6 +137,10 @@
     transition: opacity 0.3s ease;
   }
   
+  .text > strong{
+    color:darkblue
+  }
+
   .selected .text {
     opacity: 1;
   }

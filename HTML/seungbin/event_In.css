@@ -95,10 +95,91 @@ body {
     border-radius: 10px;
   }
 
+  .register-button{
+    padding: 12px;
+    transition: all 0.2s ease;
+  }
   .register-button:hover {
     background-color: #555;
   }
   
+img{
+  height: 450px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+#arrowAnim {
+  position: fixed;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+  right: 500px;
+  top: 250px;
+  background-color: #333;
+  border-radius:50px ;
+  z-index: 1;
+  cursor:pointer;
+}
+
+.register-button:hover{
+  cursor:pointer;
+}
+
+.arrow {
+  width: 1vw;
+  height: 1vw;
+  border: 0.5vw solid;
+  border-color: #FF8900 transparent transparent #FF8900;
+  transform: rotate(-45deg);
+}
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite;
+    animation: slide 4s linear infinite;
+    /* animation-iteration-count: 1;  */
+  }
+  
+  .delay1 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  
+  .delay2 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  
+  .delay3 {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  
+
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 1;
+      transform: translateX(29px); 
+    }
+
+    30%{
+      opacity: 0;
+      transform: translateX(20px); 
+    }
+
+    80% {
+      opacity: 1;
+      transform: translateX(15px); 
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(15px); 
+    }
+  }
+
   /* 푸터 스타일 */
   footer {
     background-color: #333;

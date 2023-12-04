@@ -107,6 +107,10 @@
     font-size: 12px;
 }
 
+.board-table>td{
+    cursor: pointer;
+}
+
 .paging > ul{
     list-style: none;
     display: flex;
@@ -119,6 +123,7 @@
     margin: 1rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 /* 종목별 순위 */
@@ -300,8 +305,8 @@ figure{
 }
 
 #mov-fig:hover{
-    cursor: pointer;
-    transform: scale(1.2);
+    border: 2px solid #07c;
+    transform: scale(1.1);
     margin: 20px;
     transition: all 0.5s ease;
 }

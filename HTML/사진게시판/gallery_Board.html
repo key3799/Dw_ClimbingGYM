@@ -31,7 +31,7 @@
                         <iconify-icon icon="ooui:next-ltr"></iconify-icon>
                     </div>
                     <div class="menu-item">
-                        <span><a href="gallery_Board.html">활동 사진</a></span>
+                        <a href="gallery_Board.html"><span>활동 사진</span></a>
                         <iconify-icon icon="ooui:next-ltr"></iconify-icon>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                                 <p id="cm-title">조아조아클라이밍</p>
                                 <p id="cm-day">2023/11/29</p>
                             </div>
-                           
+
                         </figure>
                     </div>
                     <div class="img-box">
@@ -118,7 +118,27 @@
                         </figure>
                     </div>
                 </div>
+                <div class="add-picture">
+                    <button id="add-modal">
+                        사진 추가 하기
+                    </button>
+                </div>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <span><input type="file" id="image-input"></span>
+
+                        <p><input type="text" id="image-name" placeholder="제목을 입력하세요"></p>
+                        <p><input type="date" id="upload-day"></p>
+
+                        <button id="add-image">게시물 추가</button>
+                    </div>
+                </div>
             </div>
+
+
+
 </body>
+<script src="gallery_Board.js"></script>
 
 </html>
