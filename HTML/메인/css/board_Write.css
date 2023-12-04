@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
+}
+
+.nav{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+=======
+>>>>>>> 9184b809f0e1b0fc5fcffaa64eb3b8ffee7c619a
 }
 
 .nav {

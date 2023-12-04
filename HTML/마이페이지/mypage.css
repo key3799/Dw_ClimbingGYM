@@ -8,8 +8,37 @@
 }
 
 body {
+<<<<<<< HEAD
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+   
+  /* 메인 콘텐츠 스타일 */
+  main {
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  .main-contant{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+=======
   font-family: "Arial", sans-serif;
   background-color: #f5f5f5;
+>>>>>>> 9184b809f0e1b0fc5fcffaa64eb3b8ffee7c619a
 }
 
 .container {
