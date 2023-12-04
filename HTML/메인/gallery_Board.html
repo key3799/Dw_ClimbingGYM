@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/gallery_Board.css" />
+    <link rel="stylesheet" href="css/mainHeader.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>사진게시판</title>
+  </head>
+  <body>
+    <header class="site__header">
+      <a
+        style="color: black; text-decoration: none"
+        href="http://127.0.0.1:5501/lndex.html#"
+      >
+        <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+          DW CLIMB<br />
+          Community
+          <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+        </h2>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li>
+            <div class="menu-item menu-item1">
+              클라이밍소개
+              <ul class="sub-menu sub-menu1">
+                <li>
+                  <a href="climb.html">클라이밍이란?</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item2">
+              <a
+                href="climbing_News.html"
+                style="color: black; text-decoration: none"
+                >클라이밍소식</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item3">
+              게시판
+              <ul class="sub-menu3 sub-menu3">
+                <li>
+                  <a
+                    href="free_Board.html"
+                    style="color: white; text-decoration: none"
+                    >자유게시판</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gallery_Board.html"
+                    style="color: white; text-decoration: none"
+                    >사진게시판</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item4">
+              <a
+                href="mapping.html"
+                style="
+                  color: black;
+                  text-decoration: none;
+                  font-weight: 600;
+                  padding: 0 1rem;
+                "
+                >추천 암장</a
+              >
+              <ul class="sub-menu sub-menu4">
+                <li><a href="mapping.html">암장 순위별 후기</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="menu-item" href="login.html">로그인</a></li>
+          <li><a class="menu-item" href="membership.html">회원 가입</a></li>
+        </ul>
+      </nav>
+      <div
+        id="burger-icon"
+        class="menu-icon active"
+        onclick="toggleNewMenu()"
+        style="cursor: pointer"
+      >
+        &#9776;
+      </div>
+      <!-- </div> -->
+      <!-- X 버튼 ✔-->
+      <!-- <div class="close-icon" onclick="toggleNewMenu()"> -->
+      <div
+        id="close-icon"
+        class="close-icon inactive"
+        onclick="toggleNewMenu()"
+      >
+        &times;
+      </div>
+      <!-- </div> -->
+      <!-- ⭐ hiddenTab transition -->
+      <nav class="new-menu">
+        <ul>
+          <li><a class="new-menu-item" href="climb.html">클라이밍 소개</a></li>
+          <li>
+            <a class="new-menu-item" href="main_Board.html">공지사항</a>
+          </li>
+          <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
+          <li><a class="new-menu-item" href="#">마이페이지</a></li>
+          <li><a class="new-menu-item" href="#">Q&A</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left-menu">
+        <div class="board">
+          <h1>게시판</h1>
+        </div>
+        <div class="menus">
+          <div class="menu-name">
+            <div class="menuItem">
+              <span>공지사항</span>
+              <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+            </div>
+            <div class="menuItem">
+              <span>자유게시판</span>
+              <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+            </div>
+            <div class="menuItem">
+              <span>클라이밍 TIP 공유</span>
+              <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+            </div>
+            <div class="menuItem click">
+              <span>활동 사진</span>
+              <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <iconify-icon id="icon" icon="ion:camera-sharp"></iconify-icon>
+          <h1>사진게시판</h1>
+        </div>
+        <div class="img-container">
+          <div class="img-content">
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/1.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">천안 우동소</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/2.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">딩가동</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/3.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">조아조아클라이밍</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/4.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">올라가라더높게</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/5.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">스파이더맨이꿈</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/6.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">홀로 우뚝선다</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/7.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">~~~~</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/8.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">~~~~</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/9.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">~~~~</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/10.avif" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">~~~~</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/11.jpg" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">~~~~</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+            <div class="img-box">
+              <figure>
+                <img src="img/gallery/12.webp" alt="동호회사진" />
+                <div class="explan">
+                  <p id="cm-title">~~~~</p>
+                  <p id="cm-day">2023/11/29</p>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/toggleNewMenu.js"></script>
+</html>

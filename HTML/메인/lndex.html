@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DW Climbing Community</title>
     <link rel="stylesheet" href="pro.css" />
+    <link rel="stylesheet" href="mainHeader.html" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,35 +27,75 @@
           href="http://127.0.0.1:5501/lndex.html#"
         >
           <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
-            DW CLIMB
-            <div>Community</div>
+            DW CLIMB<br />
+            Community
+            <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
           </h2>
         </a>
         <nav>
           <ul class="menu">
             <li>
-              <a class="menu-item menu-item1" href="#"> 클라이밍소개</a>
-              <ul class="sub-menu sub-menu1">
-                <li>
-                  <a href="#">클라이밍이란?</a>
-                </li>
-                <li>
-                  <a href="#">무엇일까요~?</a>
-                </li>
-              </ul>
+              <div class="menu-item menu-item1">
+                클라이밍소개
+                <ul class="sub-menu sub-menu1">
+                  <li>
+                    <a href="climb.html">클라이밍이란?</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#">무엇일까요~?</a>
+                  </li> -->
+                </ul>
+              </div>
             </li>
-            <li><a class="menu-item" href="#">클라이밍소식</a></li>
             <li>
-              <a class="menu-item menu-item2" href="#">게시판</a>
-              <ul class="sub-menu sub-menu2">
-                <li>
-                  <a href="#">자유게시판</a>
-                </li>
-              </ul>
+              <div class="menu-item menu-item2">
+                <a
+                  href="climbing_News.html"
+                  style="color: black; text-decoration: none"
+                  >클라이밍소식</a
+                >
+              </div>
             </li>
-            <li><a class="menu-item" href="mapping.html">매칭</a></li>
-            <li><a class="menu-item" href="#">로그인</a></li>
-            <li><a class="menu-item" href="#">회원 가입</a></li>
+            <li>
+              <div class="menu-item menu-item3">
+                게시판
+                <ul class="sub-menu3 sub-menu3">
+                  <li>
+                    <a
+                      href="free_Board.html"
+                      style="color: white; text-decoration: none"
+                      >자유게시판</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="gallery_Board.html"
+                      style="color: white; text-decoration: none"
+                      >사진게시판</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item menu-item4">
+                <a
+                  href="mapping.html"
+                  style="
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 0 1rem;
+                  "
+                  >추천 암장</a
+                >
+                <ul class="sub-menu sub-menu4">
+                  <li><a href="mapping.html">암장 순위별 후기</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="menu-item" href="login.html">로그인</a></li>
+            <li><a class="menu-item" href="membership.html">회원 가입</a></li>
           </ul>
         </nav>
         <div
@@ -79,9 +120,15 @@
         <!-- ⭐ hiddenTab transition -->
         <nav class="new-menu">
           <ul>
-            <li><a class="new-menu-item" href="#">클라이밍 소개</a></li>
-            <li><a class="new-menu-item" href="#">클라이밍 소식</a></li>
-            <li><a class="new-menu-item" href="#">게시판</a></li>
+            <li>
+              <a class="new-menu-item" href="climb.html">클라이밍 소개</a>
+            </li>
+            <li>
+              <a class="new-menu-item" href="climbing_News.html"
+                >클라이밍 소식</a
+              >
+            </li>
+            <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
             <li><a class="new-menu-item" href="#">마이페이지</a></li>
             <li><a class="new-menu-item" href="#">Q&A</a></li>
           </ul>
@@ -170,7 +217,9 @@
               rotate="-180deg"
               style="top: 20px"
             ></iconify-icon>
-            Login
+            <a href="login.html" style="color: white; text-decoration: none"
+              >Login</a
+            >
           </div>
           <input
             style="width: 180px"
@@ -179,20 +228,37 @@
           />
           <div class="banner-tab-container">
             <div class="banner-descs">
-              <div class="banner-desc">클라이밍 소개</div>
-              <div class="banner-desc">이달의 소식</div>
-              <div class="banner-desc">자유게시판</div>
-              <div class="banner-desc">가까운 지점 찾기</div>
+              <div class="banner-desc">
+                <a href="climb.html">클라이밍 소개</a>
+              </div>
+              <div class="banner-desc"><a href="notice.html">공지사항</a></div>
+              <div class="banner-desc">
+                <a href="free_Board.html">자유게시판</a>
+              </div>
+              <div class="banner-desc">
+                <a href="gallery_Board.html">사진 게시판</a>
+              </div>
+              <div class="banner-desc">
+                <a href="mapping.html">가까운 지점 찾기</a>
+              </div>
+              <div class="banner-desc">
+                <a href="tip_Board.html">팁 공유 게시판</a>
+              </div>
+              <div class="banner-desc">
+                <a href="climbing_News.html">클라이밍 뉴스</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="right-banner-container">
-        <div class="right-banner"></div>
+        <div class="right-banner">
+          <img src="제목을 입력하세요 (1).jpg" alt="#" />
+        </div>
       </div>
       <div class="data-counters">
         <div class="timer" data-counter="600">
-          전국 클라이밍 암장 개 수 <span class="timers">0</span>개 이상
+          전국 클라이밍 암장 갯 수 <span class="timers">0</span>개 이상
         </div>
         <div class="timer" data-counter="200">
           홈페이지가 개설된 지
@@ -202,7 +268,9 @@
           2023.12.01 DW Commuity커뮤니티 회원 수
           <span class="timers">0</span>만명
         </div>
-        <h2>빠르게 성장 중인 우리 커뮤니티 으쌰으쌰 홍두깨</h2>
+        <br />
+        <h2>빠르게 성장 중인 DW Climbing Community</h2>
+        <h2>항상 여러분들 덕분입니다!</h2>
       </div>
       <!-- <table class="board-table">
         <tbody>
@@ -259,7 +327,14 @@
           <tr>
             <td class="box-control2">
               <div class="box"></div>
-              자유게시판 <span style="margin-left: 100px">더보기</span>
+              공지게시판
+              <span style="margin-left: 100px"
+                ><a
+                  href="notice.html"
+                  style="color: black; text-decoration: none"
+                  >더보기</a
+                ></span
+              >
             </td>
             <td class="box-control2">
               <div class="box"></div>
@@ -276,19 +351,62 @@
           </tr>
         </tbody>
       </table>
-      <!-- member display 값 조정 필요-->
-      <div class="member-photo">
-        <tr>
-          <td class="box-control2">
-            <div class="box"></div>
-            회원사진 <span style="margin-left: 100px">더보기</span>
-          </td>
-        </tr>
-        <div class="member">
-          <img style="max-width: 100%" src="slide (1).jpg" alt="" />
-          <img style="max-width: 100%" src="slide (2).jpg" alt="" />
-        </div>
-      </div>
+      <table class="board-table">
+        <tbody>
+          <tr>
+            <td class="box-control2">
+              <div class="box"></div>
+              자유게시판
+              <span style="margin-left: 100px"
+                ><a
+                  href="free_Board.html"
+                  style="color: black; text-decoration: none"
+                  >더보기</a
+                ></span
+              >
+            </td>
+            <td class="box-control2">
+              <div class="box"></div>
+              <span class="best">공지</span>회원님들의 자유게시판 이용...
+            </td>
+            <td class="box-control2">
+              <div class="box"></div>
+              <span class="best">Best</span>클라이밍 3년차 뉴비가 추천하는...
+            </td>
+            <td>
+              <span><strong>18:20</strong></span
+              >안녕하세요. 가입했습니다. 혹시...
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="board-table">
+        <tbody>
+          <tr>
+            <td class="box-control2">
+              <div class="box"></div>
+              팁 공유게시판
+              <span style="margin-left: 100px"
+                ><a href="#" style="color: black; text-decoration: none"
+                  >더보기</a
+                ></span
+              >
+            </td>
+            <td class="box-control2">
+              <div class="box"></div>
+              <span class="best">공지</span>회원님들의 자유게시판 이용...
+            </td>
+            <td class="box-control2">
+              <div class="box"></div>
+              <span class="best">Best</span>클라이밍 3년차 뉴비가 추천하는...
+            </td>
+            <td>
+              <span><strong>18:20</strong></span
+              >안녕하세요. 가입했습니다. 혹시...
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <!-- 크기 조정 필요 ✔-->
     <div class="best-photos">
@@ -301,28 +419,19 @@
       <div class="best-photo">
         <div class="photos">
           <div class="photo">
-            <img style="max-width: 100%" src="slide (1).jpg" alt="" />
-            <p>Photographer : 밍밍이</p>
+            <img src="클라이밍1.jpg" alt="climibing22" />
+            <p>Photographer : 김진용 선생님</p>
           </div>
           <div class="photos">
             <div class="photo">
-              <img style="max-width: 100%" src="slide (2).jpg" alt="" />
-              <p>Photographer : 닝닝이</p>
+              <img src="클라이밍2.jpg" alt="climbing123" />
+              <p>Photographer : 천리안 선생님</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="mapping-tab">
-      클라이밍지점
-      <div class="locationWrapper">
-        <div class="location">서울</div>
-        <div class="location">경기</div>
-        <div class="location">충남</div>
-        <div class="location">전라</div>
-        <div class="location">경상</div>
-      </div>
-    </div>
+
     <div class="community-tab">
       DW CLIMB community
       <p>World's premier Climbing Community</p>
@@ -335,27 +444,5 @@
   </body>
   <script src="script.js"></script>
   <script src="/js/setTimeout.js"></script>
-  <script>
-    function toggleNewMenu() {
-      var newMenu = document.querySelector(".new-menu");
-      newMenu.classList.toggle("show-new-menu");
-      const bgImage = document.getElementById("bgImage");
-
-      // 햄버거 버튼과 X 버튼 전환
-      var burgerIcon = document.getElementById("burger-icon");
-      var closeIcon = document.getElementById("close-icon");
-      burgerIcon.classList.toggle("active");
-      closeIcon.classList.toggle("active");
-      burgerIcon.classList.toggle("inactive");
-      closeIcon.classList.toggle("inactive");
-      newMenu.classList.toggle("active");
-      bgImage.classList.toggle("menu-open");
-      // burgerIcon.style.display = newMenu.classList.contains("show-new-menu")
-      //   ? "none"
-      //   : "block";
-      // closeIcon.style.display = newMenu.classList.contains("show-new-menu")
-      //   ? "block"
-      //   : "none";
-    }
-  </script>
+  <script src="js/toggleNewMenu.js"></script>
 </html>

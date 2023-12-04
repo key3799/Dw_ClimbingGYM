@@ -22,16 +22,6 @@ main {
   /* position: relative; */
 }
 
-/* .right-banner{
-  background-color: #ebf0ff;
-  width: 200px;
-  height: 100%;
-  border: 1px solid black;
-  position: fixed;
-  right: 0;
-  top: 700px;
-} */
-
 .bgImage {
   width: 100%;
   height: 75vh;
@@ -42,6 +32,7 @@ main {
 
 .site__header {
   width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,18 +43,28 @@ main {
   z-index: 1000;
 }
 
-/* .site__header:hover {
-} */
-
 .site__header:hover .menu-item {
   color: rgb(105, 105, 105);
 }
-
+.site__header img {
+  height: 60px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
 .menu {
   display: flex;
   align-items: center;
   height: 64px;
   position: relative;
+}
+.menu-item1:hover .sub-menu1,
+.menu-item2:hover .sub-menu2,
+.menu-item3:hover .sub-menu3,
+.menu-item4:hover .sub-menu4 {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .menu li {
@@ -121,23 +122,38 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
-.sub-menu {
+.sub-menu1,
+.sub-menu2,
+.sub-menu3,
+.sub-menu4 {
   display: none;
   position: absolute;
-  top: 80px;
-  left: 31px;
-  background-color: #2e2e2e;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 0.8rem;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background-color: #545775;
+  border-top-right-radius: 8px;
+  padding: 1rem;
   opacity: 0;
   transform: translateY(10px);
+  transition: opacity 200ms, transform 200ms;
 }
-.sub-menu2 {
-  display: none;
+.sub-menu1, .sub-menu2, .sub-menu4{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.sub-menu3 li:last-child{
+  background-color: #393b4e;
+  width: 200px;
+  left: 0;
+  height: 100px;
   position: absolute;
-  top: 80px;
-  left: 288px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.sub-menu3 li:last-child a{
+  margin-left: 1rem;
 }
 .sub-menu a {
   text-decoration: none;
@@ -145,6 +161,9 @@ main {
 }
 .brand {
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #burger-icon {
   position: relative;
@@ -291,13 +310,14 @@ main {
 .left-banner-container {
   float: left;
   width: 200px;
-  margin-left: 5rem;
-  margin-top: 2rem;
+  margin-left: 2rem;
 }
 .left-banner {
   background-color: #19253d;
   width: 200px;
-  height: 2000px;
+  height: 1690px;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   border: 1px solid black;
 }
 .banner-loginBox {
@@ -305,8 +325,10 @@ main {
   align-items: center;
   justify-content: center;
   margin: 1rem;
-  gap: 1rem;
+  margin-bottom: 2rem;
+  gap: 0.3rem;
   cursor: pointer;
+  color: white;
 }
 .banner-descs {
   margin: 0.7rem;
@@ -320,22 +342,36 @@ main {
   cursor: pointer;
   margin-bottom: 1rem;
 }
+.banner-desc a{
+  color: white;
+  text-decoration: none;
+}
 .right-banner-container {
   float: right;
+  top: 2rem;
   width: 200px;
-  margin-right: 5rem;
-  margin-top: 2rem;
+  height: 500px;
+  margin-right: 2rem;
 }
 .right-banner {
-  /* background-color: #0074cc; */
-  background-color: #19253d;
   width: 200px;
-  height: 2000px;
-  border: 1px solid black;
+  height: 500px;
+  margin-top: 1rem;
 }
-.timer {
-  /* border: 1px solid black; */
+.right-banner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
+.data-counters {
+  background-color: #19253d;
+  font-weight: 700;
+  color: white;
+  max-width: 1128px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 .sub-container {
   position: relative;
   text-align: center;
@@ -396,8 +432,8 @@ main {
 }
 .banner-tab {
   display: flex;
-  width: 1128px;
-  /* margin: 0 auto; */
+  max-width: 1128px;
+  margin-left: 22.5rem;
   margin-top: 1rem;
 }
 .member-photo {
@@ -421,12 +457,19 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  width: 100%;
+  /* width: 100%; */
+  height: 200px;
   margin: 0 auto;
 }
 .photo {
   width: 500px;
+  height: 350px;
   margin-left: 1rem;
+}
+.photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .photo > p {
   font-weight: 700;

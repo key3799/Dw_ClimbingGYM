@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nav{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+.left-menu{
+    width: 20%;
+    height: 68%;
+    background-color: aqua;
+}
+
+.board{
+    width: 100%;
+    height: 35%;
+    background-color: aliceblue;
+}
+
+.board>h1{
+    text-align: end;
+    padding: 165px 22px 20px 0px;
+}
+
+.menu-name{
+    padding: 40px;
+}
+
+.menuItem{
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.click{
+    color: blue;
+}
+
+.menu-item>span{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.content{
+    /* margin: 3rem auto; */
+}
+
+.title{
+    text-align: center;
+    margin: 2rem;
+}
+
+.list{
+    list-style: none;
+    display: grid;
+    gap: 20px;
+    padding: 1rem;
+    
+}
+.list-item{
+    box-shadow: 0 0 0 3px rgb(200,200,200) ;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.list-item > h2{
+    padding: 3px;
+    font-size: 1.2rem;
+}
+
+.text{
+    opacity: 0;
+}
+
+.text.visible {
+    opacity: 1;
+}
+
+.list-item.selected{
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+    padding: 12px; 
+}
+
+.list-item .content{
+    display: none;
+}
+
+.list-item.selected .content{
+    display: block;
+}
+
+.list-item .icon{
+    transform: rotate(0deg);
+}
+.list-item.selected .icon{
+    transform: rotate(180deg);
+}
+
+#source{
+    padding: 0px 15px;
+    font-size: 11px;
+    text-align: end;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 0px 80px
+}
+
+
+.footer-icon{
+    padding: 10px 0px 10px 0px;
+    font-size: 30px;    
+}
+
+.sns{
+    color: white;
+}
+
+.footer-header>h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.footer-body> ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 15px;
+    margin-right: 80px;
+}
+
+
+.footer-body> ul> li{
+    margin-left: 2rem;
+}
+
+.footer-body{
+    height: 50px;
+    margin: 5px 0px 0px 80px;
+}
+
+.footer-name{
+    padding-top: 30px;
+    font-size: 10px;
+    text-align: end;
+    margin-right: 80px;
+}

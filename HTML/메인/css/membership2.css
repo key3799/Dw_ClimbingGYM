@@ -1,0 +1,48 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.divider {
+  background-color: slategray;
+  height: 1px;
+  margin: 2rem 0;
+  position: relative;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+input[type="text"],
+input[type="password"] {
+  border: 0;
+  box-shadow: 0 0 0 1px #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  box-shadow: 0 0 0 3px dodgerblue;
+  outline: none;
+}
+
+input[type="button"] {
+  background-color: rgb(0, 0, 0);
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+select {
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid black;
+  padding: 0.3rem 0.1rem;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  margin-left: 2px;
+}

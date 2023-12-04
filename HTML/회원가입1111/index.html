@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>회원가입</h1>
+      <div class="divider">
+        <span></span>
+      </div>
+      <table>
+        <tr>
+          <th>ID</th>
+          <td><input type="text" placeholder="아이디 10글자 이내" /></td>
+          <td><input type="button" value="중복 확인" /></td>
+        </tr>
+        <tr>
+          <th>비밀번호</th>
+          <td>
+            <input
+              type="password"
+              placeholder="영문,숫자,특수문자 포함 8자 이상"
+            />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>비밀번호 확인</th>
+          <td><input type="password" /></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <div class="divider">
+        <span></span>
+      </div>
+
+      <table>
+        <tr>
+          <th>닉네임</th>
+          <td>
+            <input
+              type="text"
+              placeholder="공백없이 한글,영문,숫자만 가능 (한글2자,영문4자 이상 가능)"
+            />
+          </td>
+          <td><input type="button" value="중복 확인" /></td>
+        </tr>
+        <tr>
+          <th>이름</th>
+          <td>
+            <input type="text" />
+          </td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td><input type="text" /></td>
+          <td>
+            <select>
+              <option>선택</option>
+              <option>@gmail.com</option>
+              <option>@naver.com</option>
+              <option>@daum.net</option>
+              <option>직접입력</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <div class="divider">
+        <span></span>
+      </div>
+      <table>
+        <tr>
+          <td>
+            프로필사진 <input type="file" accept="image/gif, image/jpeg" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>생년월일 : <input type="date" /></td>
+        </tr>
+      </table>
+
+      <div class="divider">
+        <span></span>
+      </div>
+      <div class="input-wrapper horizontal">
+        <p>메일링서비스</p>
+        <input type="checkbox" id="remember" checked />
+        <label for="remember">정보 메일을 받겠습니다.</label>
+        <p>정보공개</p>
+        <input type="checkbox" id="remember" checked />
+        <label for="remember"
+          >다른분들이 나의 정보를 볼 수 있도록 합니다.</label
+        >
+      </div>
+      <div class="divider">
+        <span></span>
+      </div>
+
+      <div class="btn">
+        <button type="submit" class="btn1">취소</button>
+        <button type="submit" class="btn2">회원가입</button>
+      </div>
+    </div>
+  </body>
+</html>
