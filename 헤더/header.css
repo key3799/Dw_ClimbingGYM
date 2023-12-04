@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.site__header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  z-index: 1000;
+}
+.site__header:hover .menu-item {
+  color: rgb(105, 105, 105);
+}
+
+.site__header img {
+  height: 60px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  position: relative;
+}
+.menu-item1:hover .sub-menu1,
+.menu-item2:hover .sub-menu2,
+.menu-item3:hover .sub-menu3,
+.menu-item4:hover .sub-menu4 {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  position: relative;
+  /* z-index: 1; */
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: all 200ms linear;
+  text-decoration: none;
+}
+
+.menu-item::before,
+.menu-item::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 4px;
+  background-color: dodgerblue;
+  transition: width 200ms linear;
+}
+
+.menu-item:hover::before,
+.menu-item:hover::after {
+  width: 100%;
+}
+
+.menu-item.active::before {
+  transform: translateY(0);
+  background-color: dodgerblue;
+  z-index: -1;
+}
+
+.menu-item:hover {
+  color: dodgerblue;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.menu-item1:hover ~ .sub-menu1,
+.menu-item2:hover ~ .sub-menu2 {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.sub-menu1,
+.sub-menu2,
+.sub-menu3,
+.sub-menu4 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background-color: #545775;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 200ms, transform 200ms;
+}
+.sub-menu1,
+.sub-menu2,
+.sub-menu3,
+.sub-menu4 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  background-color: #545775;
+  border-top-right-radius: 8px;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 200ms, transform 200ms;
+}
+.sub-menu1,
+.sub-menu2,
+.sub-menu4 {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.sub-menu3 li:last-child {
+  background-color: #393b4e;
+  width: 200px;
+  left: 0;
+  height: 100px;
+  position: absolute;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.sub-menu3 li:last-child a {
+  margin-left: 1rem;
+}
+.sub-menu a {
+  text-decoration: none;
+  color: white;
+}
+.brand {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#burger-icon {
+  position: relative;
+  right: 30px;
+}
+
+.new-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(216, 216, 216);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  opacity: 90%;
+}
+.menu-open {
+  pointer-events: none;
+}
+.show-new-menu {
+  display: flex;
+}
+
+.new-menu-item {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 700;
+  transition: background-color 200ms linear;
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}
+
+.new-menu-item:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.close-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.479);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.new-menu:hover .close-icon {
+  display: block;
+}
+
+.close-icon:hover {
+  color: black;
+}
+
+.active {
+  display: block;
+}
