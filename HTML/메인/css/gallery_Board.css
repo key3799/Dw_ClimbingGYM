@@ -14,15 +14,19 @@
 }
 
 .left-menu {
-  width: 20%;
-  height: 68%;
-  background-color: aqua;
+  flex: 0 0 200px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-right: 30px;
 }
 
 .board {
   width: 100%;
   height: 35%;
-  background-color: aliceblue;
+  background-color: #333;
+  color: white;
 }
 
 .board > h1 {
@@ -31,22 +35,29 @@
 }
 
 .menu-name {
-  padding: 40px;
+  margin-top: 20px;
 }
 
 .menuItem {
-  padding: 30px 0px 30px 0px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.menuItem:hover {
+  background-color: #f5f5f5;
+}
+
 
 .click {
-  color: blue;
+  color: #ff9900;
 }
 
-.menu-item > span {
-  font-size: 18px;
-  font-weight: 900;
+.menuItem > span {
+  margin-right: 10px;
 }
 
 .content {
