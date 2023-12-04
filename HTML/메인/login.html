@@ -6,8 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/mainHeader.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
     <header class="site__header">
       <a
@@ -83,36 +86,60 @@
           <li><a class="menu-item" href="membership.html">회원 가입</a></li>
         </ul>
       </nav>
-      <div
-        id="burger-icon"
-        class="menu-icon active"
-        onclick="toggleNewMenu()"
-        style="cursor: pointer"
-      >
-        &#9776;
-      </div>
-      <!-- </div> -->
-      <!-- X 버튼 ✔-->
-      <!-- <div class="close-icon" onclick="toggleNewMenu()"> -->
-      <div
-        id="close-icon"
-        class="close-icon inactive"
-        onclick="toggleNewMenu()"
-      >
-        &times;
-      </div>
-      <!-- </div> -->
-      <!-- ⭐ hiddenTab transition -->
       <nav class="new-menu">
-        <ul>
-          <li><a class="new-menu-item" href="climb.html">클라이밍 소개</a></li>
-          <li>
-            <a class="new-menu-item" href="main_Board.html">공지사항</a>
-          </li>
-          <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
-          <li><a class="new-menu-item" href="#">마이페이지</a></li>
-          <li><a class="new-menu-item" href="#">Q&A</a></li>
-        </ul>
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name"></span>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">DW Climbing Community</span>
+          </div>
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Introduce Climbing</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Climbing News</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Free Board</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Gallery Board</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">My Page</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">Q & A</span>
+                </a>
+              </li>
+            </ul>
+            <div class="bottom-cotent">
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Logout</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <section class="overlay"></section>
       </nav>
     </header>
     <div class="container">
