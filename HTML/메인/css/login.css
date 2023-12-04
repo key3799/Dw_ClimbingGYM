@@ -78,3 +78,58 @@ label {
   margin: 2rem 0;
   position: relative;
 }
+
+/* footer */
+
+.footer{
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+}
+
+.footer-main{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px 50px 80px
+}
+
+
+.footer-icon{
+  padding: 30px;
+  font-size: 30px;    
+}
+
+.sns{
+  color: white;
+}
+
+.footer-header>h1{
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.footer-body> ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 15px;
+  margin-right: 80px;
+}
+
+
+.footer-body> ul> li{
+  margin-left: 2rem;
+}
+
+.footer-body{
+  height: 50px;
+  margin: 5px 0px 0px 80px;
+}
+
+.footer-name{
+  padding-top: 30px;
+  font-size: 10px;
+  text-align: end;
+  margin-right: 80px;
+}
+
