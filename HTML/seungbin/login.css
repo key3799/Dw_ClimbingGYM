@@ -1,6 +1,15 @@
+
+/* 전체적인 스타일 */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -53,8 +62,6 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-
-
 /* 로그인 폼 스타일 */
 .login {
   max-width: 400px;
@@ -74,22 +81,21 @@ h2 {
   margin-bottom: 20px;
 }
 
-input{
+input {
   max-width: 94%;
 }
 
-.form-ego{
+.form-ego {
   display: flex;
   justify-content: end;
   margin-top: 5px;
 }
 
-.form-ego>span{
+.form-ego > span {
   font-size: 14px;
 }
 
-
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -131,11 +137,9 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
-  
 }
 
 footer p {
   font-size: 14px;
   margin: 0;
 }
-
