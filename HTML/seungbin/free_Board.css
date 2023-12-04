@@ -57,7 +57,14 @@
     background-color: #333;
   }
   
-  
+  a{
+    color: black;
+    text-decoration-line : none;
+}
+
+.click a {
+    color: #ffffffda;
+  }
   
   .menu-item span {
     margin-right: 10px;
@@ -153,14 +160,7 @@ th, td {
     padding: 10px;
     }
 
-a{
-    color: black;
-    text-decoration-line : none;
-}
 
-.click a {
-    color: #ffffffda;
-  }
 
 .pin td{
     background-color: #333;

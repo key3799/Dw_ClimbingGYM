@@ -77,7 +77,7 @@ img{
   }
 
   .deep-event a:hover{
-    background-color: #0074cc;
+    background-color: #FF8900;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     color: #fff;
     border-color: #333;
@@ -156,13 +156,15 @@ img{
     border-radius: 0 0 5px 5px;
     display: flex;
     align-items: center;
-    background-color: #0074cc;
+    background-color: #FF8900;
     color: #fff;
     cursor: pointer;
   }
 
   .second-item:hover .event-post{
-    background-color: #FF8900;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
   } 
 
 
