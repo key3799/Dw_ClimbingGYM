@@ -8,9 +8,10 @@
   height: 1px;
   margin: 2rem 0;
   position: relative;
+  width: 100%;
 }
 .container {
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
 }
 input[type="text"],
@@ -44,4 +45,40 @@ select {
   color: rgb(0, 0, 0);
   cursor: pointer;
   margin-left: 2px;
+}
+
+p {
+  font-weight: bold;
+  display: flex;
+  /* margin-top: 0.5rem; */
+}
+
+tbody {
+  font-weight: bold;
+}
+
+.btn {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.btn1 {
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid rgb(85, 85, 85);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: 100px;
+}
+
+.btn2 {
+  background-color: dodgerblue;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  width: 100px;
 }

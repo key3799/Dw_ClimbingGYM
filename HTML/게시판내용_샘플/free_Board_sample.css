@@ -257,6 +257,10 @@ a {
   width: 100%;
 }
 
+.good {
+  display: flex;
+}
+
 /*댓글*/
 .sub-container {
   margin-top: 3rem;
