@@ -97,7 +97,7 @@ main {
   transform: translateX(-50%);
   bottom: 0;
   height: 4px;
-  background-color: dodgerblue;
+  background-color: #ff9900;
   transition: width 200ms linear;
 }
 
@@ -108,12 +108,12 @@ main {
 
 .menu-item.active::before {
   transform: translateY(0);
-  background-color: dodgerblue;
+  background-color: #ff9900;
   z-index: -1;
 }
 
 .menu-item:hover {
-  color: dodgerblue;
+  color: #ff9900;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .menu-item1:hover ~ .sub-menu1,
@@ -132,29 +132,28 @@ main {
   left: 0;
   width: 200px;
   height: 100px;
-  background-color: #545775;
+  background-color: #333;
   border-top-right-radius: 8px;
   padding: 1rem;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 200ms, transform 200ms;
 }
-.sub-menu1,
-.sub-menu2,
-.sub-menu4 {
+.sub-menu1, .sub-menu2, .sub-menu4{
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.sub-menu3 li:last-child {
-  background-color: #393b4e;
+.sub-menu3 li:last-child{
+  background-color: #333;
   width: 200px;
   left: 0;
   height: 100px;
   position: absolute;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border-top: 2px solid #ff9900;
 }
-.sub-menu3 li:last-child a {
+.sub-menu3 li:last-child a{
   margin-left: 1rem;
 }
 .sub-menu a {
@@ -253,60 +252,6 @@ main {
   display: block;
 }
 
-/* 새메인 */
-
-/* .content-section a {
-    text-decoration: none;
-    color: black;
-}
-
-.content-section ul {
-    list-style: none;
-}
-
-
-.content-section {
-    position: relative;
-    margin-top: 700px; 
-}
-
-
-
-.content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.conWrp {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.conWrp h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.conWrp ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.conWrp li {
-    margin-bottom: 10px;
-}
-
-.conWrp a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.conWrp a:hover {
-    text-decoration: underline;
-} */
 
 /* 게시판 */
 .left-banner-container {
@@ -315,7 +260,7 @@ main {
   margin-left: 2rem;
 }
 .left-banner {
-  background-color: #19253d;
+  background-color: #333;
   width: 200px;
   height: 1690px;
   margin-top: 1rem;
@@ -339,12 +284,12 @@ main {
 }
 .banner-desc {
   max-width: 178px;
-  background-color: #19253d;
+  background-color: #333;
   color: white;
   cursor: pointer;
   margin-bottom: 1rem;
 }
-.banner-desc a {
+.banner-desc a{
   color: white;
   text-decoration: none;
 }
@@ -366,7 +311,7 @@ main {
   object-fit: cover;
 }
 .data-counters {
-  background-color: #19253d;
+  background-color: #333;
   font-weight: 700;
   color: white;
   max-width: 1128px;
@@ -451,7 +396,7 @@ main {
   width: 1128px;
   margin-top: 10rem;
   margin: 0 auto;
-  background-color: #2e2e2e;
+  background-color: #333;
   color: white;
 }
 
@@ -475,7 +420,7 @@ main {
 }
 .photo > p {
   font-weight: 700;
-  background-color: dodgerblue;
+  background-color: #ff9900;
   text-align: center;
   padding: 8px;
 }
@@ -519,7 +464,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: dodgerblue;
+  background-color: #ff9900;
   width: 100%;
   height: 250px;
   font-size: 46px;
@@ -541,4 +486,39 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 1600px){
+  .left-banner{
+    display: none;
+  }
+  .right-banner{
+    display: none;
+  }
+  .banner-tab{
+    display: flex;
+    position: relative;
+    right: 200px;
+  }
+  .board-table{
+    display: flex;
+    margin: 1rem;
+  }
+  video{
+    width: 100%;
+  }
+  .data-counters{
+    width: 100%;
+  }
+}
+@media screen and (max-width:980px){
+  .board-table{
+    display: none;
+  }
+  video{
+  width: 100%;
+  }
+  .data-counters{
+    width: 100%;
+  }
 }
