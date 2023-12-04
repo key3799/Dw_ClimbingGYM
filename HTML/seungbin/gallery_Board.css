@@ -28,6 +28,16 @@
   margin-right: 30px;
 }
 
+.click{
+  font-size: 17px;
+  color: white;
+  background-color: #333;
+}
+
+.click a {
+  color: white;
+}
+
 .menu-name {
   margin-top: 20px;
 }
@@ -41,7 +51,7 @@
   transition: background-color 0.3s ease;
 }
 
-.menu-item:hover {
+.non-click:hover {
   background-color: #f5f5f5;
 }
 
@@ -132,10 +142,7 @@ a {
   color: #333;
 }
 
-.click:hover {
-  background-color: #0074cc;
-  color: white;
-}
+
 
 .add-picture {
   text-align: center;

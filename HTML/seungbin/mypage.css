@@ -37,7 +37,6 @@ body {
 }
 
 
-
   #profile{
     margin: 30px 0 30px 10px;
     background-color: #fff;
@@ -55,7 +54,7 @@ body {
   }
 
   #profile-image-preview:hover{
-    border: 7px solid #0074cc ;
+    border: 7px solid #ff9900 ;
     transform: scale(1.1);
   }
 
@@ -213,12 +212,12 @@ body {
     list-style: none;
     font-size: 20px;
     margin: 10px;
-    color: #0074cc;
+    color: #ff9900;
   }
 
   #progress {
     height: 25px;
-    background-color: #0074cc;
+    background-color: #ff9900 ;
     border-radius: 4px;
     width: 0; 
     transition: width 0.5s; 

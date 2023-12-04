@@ -1,0 +1,83 @@
+
+left menu
+
+
+html
+
+<div class="left-menu">
+            <div class="board">
+                <h1>게시판</h1>
+            </div>
+            <div class="menu">
+                <div class="menu-name">
+                    <div class="menu-item non-click">
+                        <span><a href="main_Board.html">공지사항</a></span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item click">
+                        <span><a href="free_Board.html">자유게시판</a></span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item non-click">
+                        <span><a href="tip_Board.html">클라이밍 꿀팁</a></span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <div class="menu-item non-click">
+                        <span><a href="gallery_Board.html">활동 사진</a></span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+css
+
+.left-menu {
+    flex: 0 0 200px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 30px;
+  }
+  
+  .menu-name {
+    margin-top: 20px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .menu-item span {
+    margin-right: 10px;
+  }
+  
+  .non-click:hover {
+    background-color: #f5f5f5;
+  }
+
+  .click{
+    font-size: 17px;
+    color: white;
+    background-color: #333;
+  }
+  
+  a{
+    color: black;
+    text-decoration-line : none;
+}
+
+.click a {
+    color: #ffffffda;
+  }
+  
+  .menu-item span {
+    margin-right: 10px;
+  }

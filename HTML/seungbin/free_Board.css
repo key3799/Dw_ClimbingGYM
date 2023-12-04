@@ -42,18 +42,26 @@
     transition: background-color 0.3s ease;
   }
   
-  .menu-item:hover {
-    background-color: #f5f5f5;
-  }
   
   .menu-item span {
     margin-right: 10px;
   }
   
-.click{
-    color: blue;
-}
+  .non-click:hover {
+    background-color: #f5f5f5;
+  }
 
+  .click{
+    font-size: 17px;
+    color: white;
+    background-color: #333;
+  }
+  
+  
+  
+  .menu-item span {
+    margin-right: 10px;
+  }
 .content{
     margin-top: 165px;
     width: 80%;
@@ -150,8 +158,17 @@ a{
     text-decoration-line : none;
 }
 
-.pin{
-    background-color: aliceblue;
+.click a {
+    color: #ffffffda;
+  }
+
+.pin td{
+    background-color: #333;
+    color: #ffffffda;
+}
+
+.pin > #link > a{
+    color: #ffffffda;
 }
 
 .paging > ul{
@@ -169,7 +186,7 @@ a{
 }
 
 #selectNumber>a{
-    color: blue;
+    color: #333;
     font-size: 21px;
     margin-bottom: 1px;
 }
@@ -190,13 +207,23 @@ a{
     padding: 2px 10px;
     display: flex;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #333;
     border-radius: 3px;
 }
 
-#write>span{
+#write:hover{
+    border: 3px solid orange;
+}
+
+#write>a>span{
     font-size: 13px;
     padding-right: 2px;
+    color: #ffffffda;
+}
+
+.write-icon{
+    color: #ffffffda;
+    margin-top: 3px;
 }
 
 .footer{
