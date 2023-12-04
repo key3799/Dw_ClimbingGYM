@@ -10,13 +10,8 @@
     display: flex;
 }
 
-.nav{
-    background-color: black;
-    width: 100%;
-    height: 100px;
-}
-
 .left-menu{
+    margin-top: 2rem;
     width: 20%;
     height: 68%;
     background-color: aqua;
@@ -37,7 +32,7 @@
     padding: 40px;
 }
 
-.menu-item{
+.menuItem { 
     padding: 30px 0px 30px 0px;
     display: flex;
     align-items: center;
@@ -47,7 +42,7 @@
     color: blue;
 }
 
-.menu-item>span{
+.menuItem > span{
     font-size: 18px;
     font-weight: 900;
 }
@@ -88,12 +83,6 @@ input {
     border-radius: 8px;
     padding: 8px 12px;
     font-size: 14px;
-  }
-  
-  img {
-    width: 17px;
-    top: 10px;
-    right: 12px;
   }
 
 .table-wrap{

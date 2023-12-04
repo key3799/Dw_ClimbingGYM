@@ -5,32 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tip_Board.css">
+    <link rel="stylesheet" href="css/mainHeader.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>클라이밍 팁</title>
 </head>
-
 <body>
-    <div class="nav"></div>
+    <header class="site__header">
+        <a
+          style="color: black; text-decoration: none"
+          href="http://127.0.0.1:5501/lndex.html#"
+        >
+          <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+            DW CLIMB<br />
+            Community
+            <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+          </h2>
+        </a>
+        <nav>
+          <ul class="menu">
+            <li>
+              <div class="menu-item menu-item1">
+                클라이밍소개
+                <ul class="sub-menu sub-menu1">
+                  <li>
+                    <a href="climb.html">클라이밍이란?</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item menu-item2">
+                <a
+                  href="climbing_News.html"
+                  style="color: black; text-decoration: none"
+                  >클라이밍소식</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="menu-item menu-item3">
+                게시판
+                <ul class="sub-menu3 sub-menu3">
+                  <li>
+                    <a
+                      href="free_Board.html"
+                      style="color: white; text-decoration: none"
+                      >자유게시판</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="gallery_Board.html"
+                      style="color: white; text-decoration: none"
+                      >사진게시판</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item menu-item4">
+                <a
+                  href="mapping.html"
+                  style="
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 0 1rem;
+                  "
+                  >추천 암장</a
+                >
+                <ul class="sub-menu sub-menu4">
+                  <li><a href="mapping.html">암장 순위별 후기</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="menu-item" href="login.html">로그인</a></li>
+            <li><a class="menu-item" href="membership.html">회원 가입</a></li>
+          </ul>
+        </nav>
+        <div
+          id="burger-icon"
+          class="menu-icon active"
+          onclick="toggleNewMenu()"
+          style="cursor: pointer"
+        >
+          &#9776;
+        </div>
+        <!-- </div> -->
+        <!-- X 버튼 ✔-->
+        <!-- <div class="close-icon" onclick="toggleNewMenu()"> -->
+        <div
+          id="close-icon"
+          class="close-icon inactive"
+          onclick="toggleNewMenu()"
+        >
+          &times;
+        </div>
+        <!-- </div> -->
+        <!-- ⭐ hiddenTab transition -->
+        <nav class="new-menu">
+          <ul>
+            <li><a class="new-menu-item" href="climb.html">클라이밍 소개</a></li>
+            <li>
+              <a class="new-menu-item" href="main_Board.html">공지사항</a>
+            </li>
+            <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
+            <li><a class="new-menu-item" href="#">마이페이지</a></li>
+            <li><a class="new-menu-item" href="#">Q&A</a></li>
+          </ul>
+        </nav>
+      </header>
     <div class="container">
         <div class="left-menu">
             <div class="board">
                 <h1>게시판</h1>
             </div>
-            <div class="menu">
+            <div class="menus">
                 <div class="menu-name">
-                    <div class="menu-item">
+                    <div class="menuItem">
                         <span>공지사항</span>
                         <iconify-icon icon="ooui:next-ltr"></iconify-icon>
                     </div>
-                    <div class="menu-item">
+                    <div class="menuItem">
                         <span>자유게시판</span>
                         <iconify-icon icon="ooui:next-ltr"></iconify-icon>
                     </div>
-                    <div class="menu-item  click">
+                    <div class="menuItem  click">
                         <span>클라이밍 꿀팁 영상</span>
                         <iconify-icon icon="ooui:next-ltr"></iconify-icon>
                     </div>
-                    <div class="menu-item">
+                    <div class="menuItem">
                         <span>활동 사진</span>
                         <iconify-icon icon="ooui:next-ltr"></iconify-icon>
                     </div>
@@ -50,7 +155,6 @@
                     </h2>
                     <p class="content">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/9j02uBagHUs?si=Odx6vg5ElqSfrCzx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        
                     </p>
                 </li>
                 <li class="list-item">
@@ -77,10 +181,10 @@
                     <h2 class="item-name">
                         빠르게 실력 올리는 팁
                         <iconify-icon class="icon" icon="tabler:chevron-up"></iconify-icon>
-                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias aut itaque? Qui ipsam reprehenderit dolorem ipsum nulla voluptas, ratione aliquam ex culpa deleniti cupiditate sapiente laudantium consequuntur porro eius.</div>
                     </h2>
                     <p class="content">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZFjLmfKbfw?si=-GjIUndNwpQI8fFF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias aut itaque? Qui ipsam reprehenderit dolorem ipsum nulla voluptas, ratione aliquam ex culpa deleniti cupiditate sapiente laudantium consequuntur porro eius.</div>
                     </p>
                 </li>
                 <li class="list-item">
@@ -96,7 +200,6 @@
                 </li>
             </ul>
             <p id="source">영상출처 : 유튜브 ClimbTourTV_클라임투어티비</p>
-        </main>
             </div>
         </div>
     </div>

@@ -4,20 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/membership.css" />
+    <link rel="stylesheet" href="css/mainHeader.css" />
   </head>
   <body>
-
-
+    <header class="site__header">
+      <a
+        style="color: black; text-decoration: none"
+        href="http://127.0.0.1:5501/lndex.html#"
+      >
+        <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+          DW CLIMB<br />
+          Community
+          <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+        </h2>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li>
+            <div class="menu-item menu-item1">
+              클라이밍소개
+              <ul class="sub-menu sub-menu1">
+                <li>
+                  <a href="climb.html">클라이밍이란?</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item2">
+              <a
+                href="climbing_News.html"
+                style="color: black; text-decoration: none"
+                >클라이밍소식</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item3">
+              게시판
+              <ul class="sub-menu3 sub-menu3">
+                <li>
+                  <a
+                    href="free_Board.html"
+                    style="color: white; text-decoration: none"
+                    >자유게시판</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gallery_Board.html"
+                    style="color: white; text-decoration: none"
+                    >사진게시판</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item4">
+              <a
+                href="mapping.html"
+                style="
+                  color: black;
+                  text-decoration: none;
+                  font-weight: 600;
+                  padding: 0 1rem;
+                "
+                >추천 암장</a
+              >
+              <ul class="sub-menu sub-menu4">
+                <li><a href="mapping.html">암장 순위별 후기</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="menu-item" href="login.html">로그인</a></li>
+          <li><a class="menu-item" href="membership.html">회원 가입</a></li>
+        </ul>
+      </nav>
+      <div
+        id="burger-icon"
+        class="menu-icon active"
+        onclick="toggleNewMenu()"
+        style="cursor: pointer"
+      >
+        &#9776;
+      </div>
+      <!-- </div> -->
+      <!-- X 버튼 ✔-->
+      <!-- <div class="close-icon" onclick="toggleNewMenu()"> -->
+      <div
+        id="close-icon"
+        class="close-icon inactive"
+        onclick="toggleNewMenu()"
+      >
+        &times;
+      </div>
+      <!-- </div> -->
+      <!-- ⭐ hiddenTab transition -->
+      <nav class="new-menu">
+        <ul>
+          <li><a class="new-menu-item" href="climb.html">클라이밍 소개</a></li>
+          <li>
+            <a class="new-menu-item" href="main_Board.html">공지사항</a>
+          </li>
+          <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
+          <li><a class="new-menu-item" href="#">마이페이지</a></li>
+          <li><a class="new-menu-item" href="#">Q&A</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="container">
       <div class="tt">
-    <h1>회원가입</h1>
-    <h3>회원가입 약관</h3>
-  </div>
-    <br />
+        <h1>회원가입</h1>
+        <h3>회원가입 약관</h3>
+      </div>
+      <br />
 
-    <!-- <label for="intro"></label> -->
-    <textarea id="intro" cols="95" rows="15" readonly>
+      <!-- <label for="intro"></label> -->
+      <textarea id="intro" cols="95" rows="15" readonly>
 제 1 장 총 칙
 
         제 1 조 (목적)
@@ -296,49 +401,50 @@
         (3) 서비스 이용으로 발생한 분쟁에 대해 소송이 제기되는 경우 연맹의 본사 소재지를 관할하는 법원을 관할 법원으로 합니다. 
         
         </textarea
-    ><br />
-
-    <div class="input-wrapper">
-      <input type="checkbox" id="remember"/>
-      <label for="remember">회원가입 약관의 내용에 동의합니다.</label>
-    </div>
-    <div class="divider">
-      <span></span>
-    </div>
-
-    <p class="ttt">개인정보처리방침</p>
-    <br />
-    <table>
-      <tr>
-        <td>목적</td>
-        <td>항목</td>
-        <td>보유기간</td>
-      </tr>
-      <tr>
-        <td>이용자 식별 및 본인여부 확인</td>
-        <td>아이디, 이름, 비밀번호</td>
-        <td>회원 탈퇴 시까지</td>
-      </tr>
-    </table>
-<br />
-    <div class="input-wrapper">
-      <input type="checkbox" id="remember"/>
-      <label for="remember">개인정보처리방침의 내용에 동의합니다.</label>
+      ><br />
+      <div class="input-wrapper">
+        <input type="checkbox" id="remember" />
+        <label for="remember">회원가입 약관의 내용에 동의합니다.</label>
+      </div>
       <div class="divider">
         <span></span>
       </div>
-
+      <p class="ttt">개인정보처리방침</p>
+      <br />
+      <table>
+        <tr>
+          <td>목적</td>
+          <td>항목</td>
+          <td>보유기간</td>
+        </tr>
+        <tr>
+          <td>이용자 식별 및 본인여부 확인</td>
+          <td>아이디, 이름, 비밀번호</td>
+          <td>회원 탈퇴 시까지</td>
+        </tr>
+      </table>
+      <br />
       <div class="input-wrapper">
-        <input type="checkbox" id="remember"/>
-        <label for="remember">위 내용에 모두 동의합니다.</label>
+        <input type="checkbox" id="remember" />
+        <label for="remember">개인정보처리방침의 내용에 동의합니다.</label>
         <div class="divider">
+          <span></span>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="checkbox" id="remember" />
+          <label for="remember">위 내용에 모두 동의합니다.</label>
+          <div class="divider">
             <span></span>
           </div>
+        </div>
+        <div class="btn">
+          <button type="submit" class="btn1">취소</button>
+          <button type="submit" class="btn2" onclick="location">
+            <a href="membership2.html">회원가입</a>
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="btn">
-    <button type="submit" class="btn1">취소</button>
-    <button type="submit" class="btn2">회원가입</button>
-  </div>
-  </div>
   </body>
 </html>
