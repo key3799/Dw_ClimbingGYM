@@ -100,7 +100,6 @@ ul {
 
 .menu-item:hover {
   color: #ff9900;
-  background-color: #333;
 }
 .menu-item1:hover ~ .sub-menu1,
 .menu-item2:hover ~ .sub-menu2 {
