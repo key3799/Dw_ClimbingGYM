@@ -139,11 +139,13 @@ main {
   transform: translateY(10px);
   transition: opacity 200ms, transform 200ms;
 }
-.sub-menu1, .sub-menu2, .sub-menu4{
+.sub-menu1,
+.sub-menu2,
+.sub-menu4 {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.sub-menu3 li:last-child{
+.sub-menu3 li:last-child {
   background-color: #393b4e;
   width: 200px;
   left: 0;
@@ -152,7 +154,7 @@ main {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.sub-menu3 li:last-child a{
+.sub-menu3 li:last-child a {
   margin-left: 1rem;
 }
 .sub-menu a {
@@ -342,7 +344,7 @@ main {
   cursor: pointer;
   margin-bottom: 1rem;
 }
-.banner-desc a{
+.banner-desc a {
   color: white;
   text-decoration: none;
 }
