@@ -40,21 +40,31 @@
   transition: background-color 0.3s ease;
 }
 
-.menu-item:hover {
-  background-color: #f5f5f5;
-}
-
 .menu-item span {
   margin-right: 10px;
 }
 
-.click {
-  color: blue;
+.non-click:hover {
+  background-color: #f5f5f5;
 }
 
-.menu-item > span {
-  font-size: 18px;
-  font-weight: 900;
+.click {
+  font-size: 17px;
+  color: white;
+  background-color: #333;
+}
+
+a {
+  color: black;
+  text-decoration-line: none;
+}
+
+.click a {
+  color: #ffffffda;
+}
+
+.menu-item span {
+  margin-right: 10px;
 }
 
 .content {
