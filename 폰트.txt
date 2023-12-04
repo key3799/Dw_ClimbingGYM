@@ -8,3 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 2. 색상
+검정
+#333
+오렌지
+FF9900
