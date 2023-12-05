@@ -170,7 +170,7 @@ a {
 }
 
 #selectNumber > a {
-  color: blue;
+  color: #333;
   font-size: 21px;
   margin-bottom: 1px;
 }

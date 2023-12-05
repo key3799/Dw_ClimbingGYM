@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="mainHeader.css">
+    <link rel="stylesheet" href="mypage.css">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+    <header class="site__header">
+        <a
+          style="color: black; text-decoration: none"
+          href="http://127.0.0.1:5501/lndex.html#"
+        >
+          <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+            DW CLIMB<br />
+            Community
+            <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+          </h2>
+        </a>
+        <nav>
+          <ul class="menu">
+            <li>
+              <div class="menu-item menu-item1">
+                클라이밍소개
+                <ul class="sub-menu sub-menu1">
+                  <li>
+                    <a href="climb.html">클라이밍이란?</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item menu-item2">
+                <a
+                  href="climbing_News.html"
+                  style="color: black; text-decoration: none"
+                  >클라이밍소식</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="menu-item menu-item3">
+                게시판
+                <ul class="sub-menu3 sub-menu3">
+                  <li>
+                    <a
+                      href="free_Board.html"
+                      style="color: white; text-decoration: none"
+                      >자유게시판</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="gallery_Board.html"
+                      style="color: white; text-decoration: none"
+                      >사진게시판</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item menu-item4">
+                <a
+                  href="mapping.html"
+                  style="
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 0 1rem;
+                  "
+                  >추천 암장</a
+                >
+                <ul class="sub-menu sub-menu4">
+                  <li><a href="mapping.html">암장 순위별 후기</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="menu-item" href="login.html">로그인</a></li>
+            <li><a class="menu-item" href="membership.html">회원 가입</a></li>
+          </ul>
+        </nav>
+        <div
+          id="burger-icon"
+          class="menu-icon active"
+          onclick="toggleNewMenu()"
+          style="cursor: pointer"
+        >
+          &#9776;
+        </div>
+        <!-- </div> -->
+        <!-- X 버튼 ✔-->
+        <!-- <div class="close-icon" onclick="toggleNewMenu()"> -->
+        <div
+          id="close-icon"
+          class="close-icon inactive"
+          onclick="toggleNewMenu()"
+        >
+          &times;
+        </div>
+        <!-- </div> -->
+        <!-- ⭐ hiddenTab transition -->
+        <nav class="new-menu">
+          <ul>
+            <li><a class="new-menu-item" href="climb.html">클라이밍 소개</a></li>
+            <li>
+              <a class="new-menu-item" href="main_Board.html">공지사항</a>
+            </li>
+            <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
+            <li><a class="new-menu-item" href="#">마이페이지</a></li>
+            <li><a class="new-menu-item" href="#">Q&A</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <main>
+            <!-- 마이페이지 섹션 -->
+            <h2>마이페이지</h2>
+            <div class="main-contant">
+                <div id="profile">
+                    <!-- 개인 프로필 -->
+                    <h3>개인 프로필</h3>
+                    <figure>
+                    <img src="img/5.jpg" alt="프로필 사진" id="profile-image-preview">
+                  </figure>
+                    <h4 id="profile-name">이름: OOO</h4>
+                    <span id="profile-introduction">소개: 안녕하세요! 스포츠 클라이밍을 즐기는 사람입니다.</span>
+                    <div class="radius">
+                        <h3>주요 활동</h3>
+                        <h5 id="profile-residence">지역: OO</h5>
+                        <h5 id="profile-favoriteGym">좋아하는 GYM:OO</h5>
+                        <button class="profile-button" onclick="openProfileModal()">프로필 수정하기</button>
+                    </div>
+                </div>
+
+                <div id="profile-modal" class="modal">
+                    <span class="close" onclick="closeProfileModal()">&times;</span>
+                    <h2>프로필 수정</h2>
+                    <div class="input-container">
+                        <form id="profileForm">
+                            <div class="input-contant">
+                                <p><label for="file">이미지:</label>
+                                    <input type="file" id="profile-image">
+                                </p>
+                            </div>
+                            <div class="input-contant">
+                                <p><label for="name">이름:</label>
+                                <input type="text" id="name" placeholder="이름을 입력하세요" required></p>
+                            </div>
+                            <div class="input-contant">
+                                <p><label for="introduction">소개:</label>
+                                <textarea id="introduction" placeholder="자기 소개를 입력하세요"></textarea></p>
+                            </div>
+                            <div class="input-contant">
+                                <p> <label for="residence">지역:</label>
+                                <input type="text" id="residence" placeholder="거주지를 입력하세요"></p>
+                            </div>
+                            <div class="input-contant">
+                               <p> <label for="favoriteGym">좋아하는 GYM:</label>
+                                <input type="text" id="favoriteGym" placeholder="많이 이용하는 짐을 입력하세요"></p>
+                            </div>
+                            <div class="input-contant">
+                                <button type="button" onclick="updateProfile()">저장</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="active">
+                    <!-- 게시물 관리 -->
+                    <div class="active-gage">
+                        <h3>일일 활동 관리</h3>
+                        <button type="button" id="Exercisegoal" onclick="addExercisegoal()"> 운동 목표 설정</button>
+                        <h1>클라이밍 기록</h1>
+                        <form id="exerciseForm">
+                            <div class="form-item">
+                                <label for="exerciseName">종목</label>
+                                <input type="text" id="exerciseName" placeholder="ex - 리드, 볼더링, 스피드" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="exerciseDuration">운동 시간 (분)</label>
+                                <input type="number" id="exerciseDuration" placeholder="매일 1시간 30일 - 1800" required>
+                                <br>
+                            </div>
+                            <button type="button" id="addExercise" onclick="addExercise()">운동 기록하기</button>
+                        </form>
+
+                        <div id="exerciseList">
+                            <h3>운동 기록 목록</h3>
+                            <ul id="listItems">
+
+                            </ul>
+                        </div>
+
+                        <div id="progressBar">
+                            <h3>운동 진행 상황</h3>
+                            <div id="progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="chat">
+                    <h3> 메모장</h3>
+                    <div id="chat-in">
+                        <input type="text" id="chat-input" placeholder="메모하쇼">
+                        <button id="send-button">작성완료</button>
+                    </div>
+                    <ul id="chat-messages">
+
+                    </ul>
+                </div>
+                <div id="secession">
+                    <h3>회원탈퇴</h3>
+                    <p>탈퇴하시면 모든 정보가 삭제됩니다</p>
+                    <div class="btn"><button>탈퇴하기</button></div>
+                </div>
+
+            </div>
+        </main>
+      </section>
+    </div>
+      <section class="footer">
+        <div class="footer-main">
+            <div class="footer-header">
+                <h1>DW CLIMB community</h1>
+                <p>World's remier climbing community</p>
+                <div class="footer-icon">
+                    <a href="#"><iconify-icon class="sns" icon="basil:facebook-solid"></iconify-icon></a>
+                    <a href="#"><iconify-icon class="sns" icon="mdi:instagram"></iconify-icon></a>
+                    <a href="#"><iconify-icon class="sns" icon="mdi:twitter"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="footer-body">
+                <ul>
+                    <li>개인정보처리방침</li>
+                    <li>이용약관</li>
+                    <li>자주묻는질문</li>
+                    <li>문의하기</li>
+                </ul>
+                <div class="footer-name">
+                    <p>Copyright © 2013 Daejeon Climb. All rights reserved</p>
+                    <p>Dw아카데미 데이터 시각화 2회차</p>
+                    <p>관리자 : 김원상 이건희 황승빈 조에스더</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="mypage.js"></script>
+
+</html>
