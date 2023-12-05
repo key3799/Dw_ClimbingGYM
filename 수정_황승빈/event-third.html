@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스포츠클라이밍 이벤트 구체 세번째</title>
+  <link rel="stylesheet" href="event-third.css">
+  <link rel="stylesheet" href="mainHeader.css">
+</head>
+<body>
+  <header class="site__header">
+    <a
+      style="color: black; text-decoration: none"
+      href="http://127.0.0.1:5501/lndex.html#"
+    >
+      <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+        DW CLIMB<br />
+        Community
+        <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+      </h2>
+    </a>
+    <nav>
+      <ul class="menu">
+        <li>
+          <div class="menu-item menu-item1">
+            클라이밍소개
+            <ul class="sub-menu sub-menu1">
+              <li>
+                <a href="climb.html">클라이밍이란?</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item menu-item2">
+            <a
+              href="climbing_News.html"
+              style="color: black; text-decoration: none"
+              >클라이밍소식</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="menu-item menu-item3">
+            게시판
+            <ul class="sub-menu3 sub-menu3">
+              <li>
+                <a
+                  href="free_Board.html"
+                  style="color: white; text-decoration: none"
+                  >자유게시판</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery_Board.html"
+                  style="color: white; text-decoration: none"
+                  >사진게시판</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item menu-item4">
+            <a
+              href="mapping.html"
+              style="
+                color: black;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 0 1rem;
+              "
+              >추천 암장</a
+            >
+            <ul class="sub-menu sub-menu4">
+              <li><a href="mapping.html">암장 순위별 후기</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="menu-item" href="login.html">로그인</a></li>
+        <li><a class="menu-item" href="membership.html">회원 가입</a></li>
+      </ul>
+    </nav>
+    <div
+      id="burger-icon"
+      class="menu-icon active"
+      onclick="toggleNewMenu()"
+      style="cursor: pointer"
+    >
+      &#9776;
+    </div>
+    <!-- </div> -->
+    <!-- X 버튼 ✔-->
+    <!-- <div class="close-icon" onclick="toggleNewMenu()"> -->
+    <div
+      id="close-icon"
+      class="close-icon inactive"
+      onclick="toggleNewMenu()"
+    >
+      &times;
+    </div>
+    <!-- </div> -->
+    <!-- ⭐ hiddenTab transition -->
+    <nav class="new-menu">
+      <ul>
+        <li><a class="new-menu-item" href="climb.html">클라이밍 소개</a></li>
+        <li>
+          <a class="new-menu-item" href="main_Board.html">공지사항</a>
+        </li>
+        <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
+        <li><a class="new-menu-item" href="#">마이페이지</a></li>
+        <li><a class="new-menu-item" href="#">Q&A</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <section class="event-details">
+    <h2>스포츠클라이밍 이벤트</h2>
+    <div class="event-info">
+      <img src="img/이벤트포스터.jpg" alt="이벤트 포스터 이미지">
+      <p class="event-date">일정: 2024년 1월 15일 - 17일</p>
+      <p class="event-location">장소: 스포츠클라이밍 아레나</p>
+      <p class="event-description">설명: 스포츠클라이밍 이벤트에 오신 것을 환영합니다! 이번 이벤트에서는 다양한 경기와 행사를 준비하였으니 많은 참여 부탁드립니다.</p>
+    </div>
+    <button class="register-button">신청하기</button>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2023 스포츠 클라이밍 커뮤니티. All rights reserved.</p>
+  </footer>
+
+  <script src="event_In.js"></script>
+</body>
+</html>

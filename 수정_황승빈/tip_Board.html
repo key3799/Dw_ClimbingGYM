@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainHeader.css">
+    <link rel="stylesheet" href="tip_Board.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>클라이밍 팁</title>
+</head>
+
+<body>
+  <header class="site__header">
+    <a
+      style="color: black; text-decoration: none"
+      href="http://127.0.0.1:5501/lndex.html#"
+    >
+      <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+        DW CLIMB<br />
+        Community
+        <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+      </h2>
+    </a>
+    <nav>
+      <ul class="menu">
+        <li>
+          <div class="menu-item menu-item1">
+            클라이밍소개
+            <ul class="sub-menu sub-menu1">
+              <li>
+                <a href="climb.html">클라이밍이란?</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item menu-item2">
+            <a
+              href="climbing_News.html"
+              style="color: black; text-decoration: none"
+              >클라이밍소식</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="menu-item menu-item3">
+            게시판
+            <ul class="sub-menu3 sub-menu3">
+              <li>
+                <a
+                  href="free_Board.html"
+                  style="color: white; text-decoration: none"
+                  >자유게시판</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery_Board.html"
+                  style="color: white; text-decoration: none"
+                  >사진게시판</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="menu-item menu-item4">
+            <a
+              href="mapping.html"
+              style="
+                color: black;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 0 1rem;
+              "
+              >추천 암장</a
+            >
+            <ul class="sub-menu sub-menu4">
+              <li><a href="mapping.html">암장 순위별 후기</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="menu-item" href="login.html">로그인</a></li>
+        <li><a class="menu-item" href="membership.html">회원 가입</a></li>
+      </ul>
+    </nav>
+    <div
+      id="burger-icon"
+      class="menu-icon active"
+      onclick="toggleNewMenu()"
+      style="cursor: pointer"
+    >
+      &#9776;
+    </div>
+    <!-- </div> -->
+    <!-- X 버튼 ✔-->
+    <!-- <div class="close-icon" onclick="toggleNewMenu()"> -->
+    <div
+      id="close-icon"
+      class="close-icon inactive"
+      onclick="toggleNewMenu()"
+    >
+      &times;
+    </div>
+    <!-- </div> -->
+    <!-- ⭐ hiddenTab transition -->
+    <nav class="new-menu">
+      <ul>
+        <li><a class="new-menu-item" href="climb.html">클라이밍 소개</a></li>
+        <li>
+          <a class="new-menu-item" href="main_Board.html">공지사항</a>
+        </li>
+        <li><a class="new-menu-item" href="free_Board.html">게시판</a></li>
+        <li><a class="new-menu-item" href="#">마이페이지</a></li>
+        <li><a class="new-menu-item" href="#">Q&A</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="container">
+        <div class="left-menu">
+            <div class="board">
+                <h1>게시판</h1>
+            </div>
+            <div class="menu">
+                <div class="menu-name">
+                   
+                        <div class="menu-item">
+                            <a href="main_Board.html">
+                        <span>공지사항</span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                </a>
+                    <a href="free_Board.html"> 
+                        <div class="menu-item">
+                        <span>자유게시판</span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </a>
+                    </div>
+                        <div class="menu-item click">
+                        <span>클라이밍 꿀팁</span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </div>
+                    <a href="gallery_Board.html">
+                        <div class="menu-item">
+                        <span>활동 사진</span>
+                        <iconify-icon icon="ooui:next-ltr"></iconify-icon>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <h1>정보게시판</h1>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <h2 class="item-name">
+                        입문자를 위한 팁
+                        <iconify-icon class="icon" icon="tabler:chevron-up"></iconify-icon>
+                    </h2>
+                    <div class="text-content">
+                        <div class="text">먼저, 복장은 너풀거리지 않고 <strong> 신축성 좋은 운동복을 입으면 된다!</strong> 제한이 있는 건 아니지만, 클라이밍은 온 몸을 쫙 쫙 피며 올라가는데, 신축성이 없고 옷이 너무 나풀거리면 등반하는 데에 방해될 것이다. 그리고 클라이밍 신발인 볼더링 슈즈를 선택할 때는 <strong> 한사이즈 작게 신는게 좋다. </strong>이유는 신다보면 늘어나기도 하지만 발 끝에 힘을 줘야 하기 때문이다! 마지막으로 <strong>손톱은 꼭 짧게 자르고 가야 한다! </strong>힘이 제대로 전달되지 않을 수 있고, 손톱이 부러질 수도 있으니까, 조심해야 한다. <strong style="font-size: 20px;">신축성 옷! 신발은 한사이즈 작게! 손톱 자르기!</strong></div>
+                        <div class="video">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/9j02uBagHUs?si=Odx6vg5ElqSfrCzx"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h2 class="item-name">
+                        장비팁
+                        <iconify-icon class="icon" icon="tabler:chevron-up"></iconify-icon>
+                    </h2>
+                    <div class="text-content">
+                        <div class="text"> <strong style="font-size: 20px;">초크</strong>는 클라이밍하기 전에 손에 묻히는 하얀 가루이다. 주로 땀때문에 손이 미끄러지 않게 하기 위해 손바닥에 골고루 바르고 간다. 사실 굳이 따지면 초보 때에는 없어도 되긴 하지만 실력이 높아지고 레벨이 높아질 수록 하나라도 장비의 도움을 받는 게 좋으므로 계속 할 사람들은 결국 사게 된다. 일단<strong>기본 물품 중 하나라고 할 수 있다.</strong>초보라면 초급 암벽화로 매드락이라는 브랜드를 많이 신는다. 주로 암장에 대여 가능하며 1회 대여 가격은 3 ~5,000원이다. 체험을 몇 번 해보고 클라이밍을 주운동으로 할 사람들은 초급화를 사기도 하는데 나중에 중급화로 넘어갈 것을 고려하면서도 조금 더 발이 편한 신발을 원하는 경우 초중급화로 테나야 탄타를 많이 선택한다. </div>
+                        <div class="video">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/dilThFv57O0?si=qUOyDj4s-nDUqwIk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h2 class="item-name">
+                        부상 방지팁
+                        <iconify-icon class="icon" icon="tabler:chevron-up"></iconify-icon>
+                    </h2>
+                    <div class="text-content">
+                        <div class="text">1. 크림프 그립을 굳이 사용하지 않아도 된다면 불필요한 사용을 자제하고 오픈 그립 또는 핀치 그립으로 대체하는 것이 좋다.
+                            2.억지로 체중을 발뒤꿈치에 실으려고 하지 않고 코어와 허벅다리 뒷근육과 엉덩이 근육, 그리고 허리와 복부 근육 등 몸의 다양하고 큰 근육들이 주로 사용될 수 있도록 기술을 적용하는 것이 중요하다 3.부상을 당하지 않는 최고의 방법은 애초에 동작을 하지 않는 것이다. 다양한 등반기술을 익혀 굳이 사용하지 않아도 될 경우엔 사용하지 않는 것이 좋다.
+                            <strong  style="font-size: 20px;">무리하지 말고 충분히  연습해서 손가락 인대와 건을 강하게 단련!</strong>
+                            
+                            </div>
+                        <div class="video">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/QHufQf5RZwY?si=6nw4MTzsquZ8iO_0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h2 class="item-name">
+                        빠르게 실력 올리는 팁
+                        <iconify-icon class="icon" icon="tabler:chevron-up"></iconify-icon>
+                    </h2>
+                    <div class="text-content">
+                        <div class="text">1. 클라이밍에서 추가적인 운동없이 기초근력을 기르는 방법은 바로 <strong>자신에게 쉬운루트를 반복해나가는 것</strong> 2.자신의 등반 영상을 찍어 자세를 확인함으로써, 등반 시 기술적인 오류나 문제점을 쉽게 발견할 수 있습니다.3.클라이밍에서 필요한 주된 근육은 팔, 가슴, 등, 어깨 등이며, 각 부위별 근력 증진에 맞춘 운동을 실시해야 합니다. 4. <strong>집에서 가까운 클라이밍장을 선택하여 꾸준히 가는 것은 클라이밍 실력을 향상하는 것에 큰 도움을 줍니다.</strong> 5. 클라이밍에서 손목, 손가락, 팔꿈치 부상은 상대적으로 많이 발생하는 부상 유형입니다. <strong style="font-size: 20px;">실력을 늘리는 빠른 방법은 부상을 당하지 않는 것!</strong></div>
+                        <div class="video">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/5ZFjLmfKbfw?si=-GjIUndNwpQI8fFF"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <h2 class="item-name">
+                        슬기로운 클라이밍 생활을 위해
+                        <iconify-icon class="icon" icon="tabler:chevron-up"></iconify-icon>
+                    </h2>
+                    <div class="text-content">
+                        <div class="text"><strong style="font-size: 20px;">클라이밍을 대하는 자세</strong><br>
+                            루트파인딩을 하면서 퀘스트를 하나 씩 깨고 레벨을 올리고 더 잘하려고 수없이 노력하고... 한순간에 이뤄지는 것은 단 한개도 없는데 끝없이 도전하게 되는. 한계를 넘어서는 성취를 느끼는 것이 클라이밍의 진정한 재미이죠. 어려움 앞에서는 버티는 힘을 기르고, 문제가 생겼을 때는 좌절하기보다 해결하려는 의지도 키울 수 있어요.</div>
+                        <div class="video">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/gORKjl_ORFk?si=7gB8xP9-c5bMmcKA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footer-main">
+            <div class="footer-header">
+                <h1>DW CLIMB community</h1>
+                <p>World's premier climbing community</p>
+                <div class="footer-icon">
+                    <a href="#"><iconify-icon class="sns" icon="basil:facebook-solid"></iconify-icon></a>
+                    <a href="#"><iconify-icon class="sns" icon="mdi:instagram"></iconify-icon></a>
+                    <a href="#"><iconify-icon class="sns" icon="mdi:twitter"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="footer-body">
+                <ul>
+                    <li>개인정보처리방침</li>
+                    <li>이용약관</li>
+                    <li>자주묻는질문</li>
+                    <li>문의하기</li>
+                </ul>
+                <div class="footer-name">
+                    <p>Copyright © 2013 Daejeon Climb. All rights reserved</p>
+                    <p>Dw아카데미 데이터 시각화 2회차</p>
+                    <p>관리자: 김원상 이건희 황승빈 조에스더</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="tip_Board.js"></script>
+</body>
+
+</html>
