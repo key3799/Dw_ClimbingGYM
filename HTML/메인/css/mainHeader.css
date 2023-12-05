@@ -273,6 +273,19 @@ ul {
   opacity: 1;
   pointer-events: auto;
 }
+@media screen and (max-width: 1600px){
+  .menu-item{
+    display: none;
+  }
+}
+@media screen and (max-width:980px){
+  .new-menu{
+    position: fixed;
+    left: 860px;
+  }
+}
+
+
 /* .menu-open {
   pointer-events: none;
 }

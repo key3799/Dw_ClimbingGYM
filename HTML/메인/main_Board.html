@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main_Board.css" />
+    <link rel="stylesheet" href="css/mainHeader.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -11,28 +12,164 @@
     />
     <title>공지사항</title>
   </head>
-
   <body>
-    <div class="nav"></div>
+    <header class="site__header">
+      <a
+        style="color: black; text-decoration: none"
+        href="http://127.0.0.1:5501/lndex.html#"
+      >
+        <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
+          DW CLIMB<br />
+          Community
+          <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+        </h2>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li>
+            <div class="menu-item menu-item1">
+              클라이밍소개
+              <ul class="sub-menu sub-menu1">
+                <li>
+                  <a href="climb.html">클라이밍이란?</a>
+                </li>
+                <!-- <li>
+                  <a href="#">무엇일까요~?</a>
+                </li> -->
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item2">
+              <a
+                href="climbing_News.html"
+                style="color: black; text-decoration: none"
+                >클라이밍소식</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item3">
+              게시판
+              <ul class="sub-menu3 sub-menu3">
+                <li>
+                  <a
+                    href="free_Board.html"
+                    style="color: white; text-decoration: none"
+                    >자유게시판</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gallery_Board.html"
+                    style="color: white; text-decoration: none"
+                    >사진게시판</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="menu-item menu-item4">
+              <a
+                href="mapping.html"
+                style="
+                  color: black;
+                  text-decoration: none;
+                  font-weight: 600;
+                  padding: 0 1rem;
+                "
+                >추천 암장</a
+              >
+              <ul class="sub-menu sub-menu4">
+                <li><a href="mapping.html">암장 순위별 후기</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="menu-item" href="login.html">로그인</a></li>
+          <li><a class="menu-item" href="membership.html">회원 가입</a></li>
+        </ul>
+      </nav>
+      <!-- ⭐ hiddenTab transition -->
+      <nav class="new-menu">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name"></span>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">DW Climbing Community</span>
+          </div>
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="climb.html" class="nav-link">
+                  <span class="link">Introduce Climbing</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="climbing_News.html" class="nav-link">
+                  <span class="link">Climbing News</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="free_Board.html" class="nav-link">
+                  <span class="link">Free Board</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery_Board.html" class="nav-link">
+                  <span class="link">Gallery Board</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <span class="link">My Page</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="main_Board.html" class="nav-link">
+                  <span class="link">Notice</span>
+                </a>
+              </li>
+            </ul>
+            <div class="bottom-cotent">
+              <li class="list">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-log-out icon"></i>
+                  <span class="link">Logout</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <section class="overlay"></section>
+      </nav>
+    </header>
     <div class="container">
       <div class="left-menu">
         <div class="board"><h1>게시판</h1></div>
-        <div class="menu">
+        <div class="menus">
           <div class="menu-name">
-            <div class="menu-item click">
-              <span>공지사항</span>
+            <div class="menuItem click">
+              <span
+                ><a style="color: #ff9900" href="main_Board.html"
+                  >공지사항</a
+                ></span
+              >
               <iconify-icon icon="ooui:next-ltr"></iconify-icon>
             </div>
-            <div class="menu-item">
-              <span>자유게시판</span>
+            <div class="menuItem">
+              <span><a href="free_Board.html">자유게시판</a></span>
               <iconify-icon icon="ooui:next-ltr"></iconify-icon>
             </div>
-            <div class="menu-item">
-              <span>클라이밍 TIP 공유</span>
+            <div class="menuItem">
+              <span><a href="tip_Board.html">클라이밍 TIP</a></span>
               <iconify-icon icon="ooui:next-ltr"></iconify-icon>
             </div>
-            <div class="menu-item">
-              <span>활동 사진</span>
+            <div class="menuItem">
+              <span><a href="gallery_Board.html">활동 사진</a></span>
               <iconify-icon icon="ooui:next-ltr"></iconify-icon>
             </div>
           </div>
@@ -47,6 +184,7 @@
             <input type="text" placeholder="검색어 입력" />
             <img
               class="absolute"
+              style="width: 17px; top: 10px; right: 12px"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
             />
           </p>
@@ -184,4 +322,5 @@
       </div>
     </section>
   </body>
+  <script src="js/toggleNewMenu.js"></script>
 </html>

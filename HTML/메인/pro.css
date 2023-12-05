@@ -606,6 +606,9 @@ footer {
   .data-counters{
     width: 100%;
   }
+  .menu-item{
+    display: none;
+  }
 }
 @media screen and (max-width:980px){
   .board-table{
@@ -616,5 +619,15 @@ footer {
   }
   .data-counters{
     width: 100%;
+  }
+  .new-menu{
+    position: fixed;
+    left: 860px;
+  }
+  .timer {
+    margin-left: 15rem;
+  }
+  .data-counters h2{
+    margin-left: 15rem;
   }
 }
