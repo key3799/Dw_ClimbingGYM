@@ -156,6 +156,7 @@ ul {
   left: 0;
   height: 100px;
   position: absolute;
+  border-top: 2px solid #ff9900;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }

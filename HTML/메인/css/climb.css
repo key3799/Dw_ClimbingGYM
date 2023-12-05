@@ -57,6 +57,7 @@ figure {
   display: flex;
   justify-content: space-between;
   padding: 30px 0px 0px 80px;
+  background-color: #333;
 }
 
 .footer-icon {
@@ -97,10 +98,14 @@ figure {
   margin-right: 80px;
 }
 
+.section-container{
+  width: 100%;
+}
+
 h3 {
-  width: 600px;
-  /* display: flex; */
+  width: 1000px;
+  font-size: 30px;
+  font-weight: 600;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 300;
+ margin: 3rem 3rem 3rem 23%;
 }
