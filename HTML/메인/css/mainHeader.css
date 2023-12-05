@@ -20,7 +20,6 @@ ul {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -43,6 +42,8 @@ ul {
   align-items: center;
   height: 64px;
   position: relative;
+  margin-left: 33.6rem;
+  margin-top: 0.1rem;
 }
 .menu-item1:hover .sub-menu1,
 .menu-item2:hover .sub-menu2,
@@ -176,21 +177,116 @@ ul {
   right: 30px;
 }
 
-.new-menu {
-  display: none;
+.new-menu{
   position: fixed;
   top: 0;
-  right: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(216, 216, 216);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-  padding: 10px;
-  overflow-y: auto;
-  opacity: 90%;
+  left: 1800px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
-.menu-open {
+.new-menu .logo{
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.new-menu .logo .menu-icon{
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.new-menu .logo .logo-name{
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.new-menu .sidebar{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 260px;
+  padding: 20px 0;
+  background-color: white;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+.new-menu.open .sidebar{
+  left: 0;
+}
+
+.sidebar .sidebar-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+
+.sidebar .list{
+  list-style: none;
+}
+.list .nav-link{
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.nav-link .icon{
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+
+}
+.nav-link .link{
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.nav-link:hover .icon,
+.nav-link:hover .link{
+  color: black;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+.new-menu.open .overlay{
+  opacity: 1;
+  pointer-events: auto;
+}
+@media screen and (max-width: 1600px){
+  .menu-item{
+    display: none;
+  }
+}
+@media screen and (max-width:980px){
+  .new-menu{
+    position: fixed;
+    left: 860px;
+  }
+}
+
+
+/* .menu-open {
   pointer-events: none;
 }
 .show-new-menu {
@@ -234,4 +330,4 @@ ul {
 
 .active {
   display: block;
-}
+} */

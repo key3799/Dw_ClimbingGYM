@@ -1,15 +1,14 @@
-function toggleNewMenu() {
-    var newMenu = document.querySelector(".new-menu");
-    newMenu.classList.toggle("show-new-menu");
-    const bgImage = document.getElementById("bgImage");
+const navBar = document.querySelector(".new-menu");
+const menuBtns = document.querySelectorAll(".menu-icon");
+const overlay = document.querySelector(".overlay"); 
 
-    // 햄버거 버튼과 X 버튼 전환
-    var burgerIcon = document.getElementById("burger-icon");
-    var closeIcon = document.getElementById("close-icon");
-    burgerIcon.classList.toggle("active");
-    closeIcon.classList.toggle("active");
-    burgerIcon.classList.toggle("inactive");
-    closeIcon.classList.toggle("inactive");
-    newMenu.classList.toggle("active");
-    bgImage.classList.toggle("menu-open");
-  }
+// 햄버거 버튼에 클릭이벤트 등록
+menuBtns.forEach(function(menuBtn){
+    menuBtn.addEventListener("click", function(){
+        navBar.classList.toggle("open");
+    });
+});
+// overlay 
+overlay.addEventListener("click", function(){
+    navBar.classList.remove("open");
+});
