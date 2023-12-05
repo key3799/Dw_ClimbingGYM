@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>스포츠 클라이밍 커뮤니티 - 로그인</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <title>스포츠 클라이밍 커뮤니티 - 비밀번호 찾기</title>
     <link rel="stylesheet" href="css/mainHeader.css" />
+    <link rel="stylesheet" href="css/passward.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -148,26 +148,18 @@
         <section class="overlay"></section>
       </nav>
     </header>
-    <section class="login">
-      <h2>로그인</h2>
-      <form action="#" method="POST" id="login-form">
-        <div class="form-group">
-          <label for="email">이메일</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="password">비밀번호</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <button type="submit" class="btn-login">로그인</button>
-        <div class="form-ego">
-          <span
-            ><a href="signIn.html">회원가입 </a>
-            <a href="passward.html">/ 비밀번호 찾기</a></span
-          >
-        </div>
-      </form>
-    </section>
+    <div class="container">
+      <section class="find-password">
+        <h2>비밀번호 찾기</h2>
+        <form action="#" method="POST" id="find-password-form">
+          <div class="form-group">
+            <label for="email">가입 시 등록한 이메일</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <button type="submit" class="btn-find-password">비밀번호 찾기</button>
+        </form>
+      </section>
+    </div>
     <section class="footer">
       <div class="footer-main">
         <div class="footer-header">
@@ -189,7 +181,7 @@
           </div>
         </div>
         <div class="footer-body">
-          <ul>
+          <ul class="ul-footer">
             <li>개인정보처리방침</li>
             <li>이용약관</li>
             <li>자주묻는질문</li>
@@ -198,7 +190,7 @@
         </div>
       </div>
     </section>
+    <script src="js/passwoard.js"></script>
+    <script src="js/toggleNewMenu.js"></script>
   </body>
-  <script src="js/toggleNewMenu.js"></script>
-  <script src="js/login.js"></script>
 </html>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>스포츠 클라이밍 커뮤니티 - 로그인</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <title>클라이밍 이벤트</title>
+    <link rel="stylesheet" href="css/event.css" />
     <link rel="stylesheet" href="css/mainHeader.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link
@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="site__header">
       <a
@@ -148,25 +149,48 @@
         <section class="overlay"></section>
       </nav>
     </header>
-    <section class="login">
-      <h2>로그인</h2>
-      <form action="#" method="POST" id="login-form">
-        <div class="form-group">
-          <label for="email">이메일</label>
-          <input type="email" id="email" name="email" required />
+    <section class="gallery">
+      <h2>클라이밍 이벤트!</h2>
+      <div class="deep-event"><a href="event_In.html">신청 한번에 보기</a></div>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="img/포스터.jpg" alt="사진 1" />
+          <div class="image-overlay">
+            <a href="event-first.html">자세히 보기</a>
+          </div>
+          <div class="event-post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            suscipit laboriosam soluta atque iure praesentium, ullam sequi
+            mollitia dolore, tempora nulla. Aperiam deleniti debitis sit et
+            rerum explicabo fugit veritatis.
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password">비밀번호</label>
-          <input type="password" id="password" name="password" required />
+        <div class="gallery-item second-item">
+          <img src="img/event.webp" alt="사진 2" />
+          <div class="image-overlay">
+            <a href="event-second.html">자세히 보기</a>
+          </div>
+          <div class="event-post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            suscipit laboriosam soluta atque iure praesentium, ullam sequi
+            mollitia dolore, tempora nulla. Aperiam deleniti debitis sit et
+            rerum explicabo fugit veritatis.
+          </div>
         </div>
-        <button type="submit" class="btn-login">로그인</button>
-        <div class="form-ego">
-          <span
-            ><a href="signIn.html">회원가입 </a>
-            <a href="passward.html">/ 비밀번호 찾기</a></span
-          >
+        <div class="gallery-item">
+          <img src="img/이벤트포스터.jpg" alt="사진 3" />
+          <div class="image-overlay">
+            <a href="event-third.html">자세히 보기</a>
+          </div>
+          <div class="event-post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            suscipit laboriosam soluta atque iure praesentium, ullam sequi
+            mollitia dolore, tempora nulla. Aperiam deleniti debitis sit et
+            rerum explicabo fugit veritatis.
+          </div>
         </div>
-      </form>
+        <!-- 추가적인 이미지 아이템을 필요한 만큼 추가할 수 있습니다 -->
+      </div>
     </section>
     <section class="footer">
       <div class="footer-main">
@@ -195,10 +219,15 @@
             <li>자주묻는질문</li>
             <li>문의하기</li>
           </ul>
+          <div class="footer-name">
+            <p>Copyright © 2013 Daejeon Climb. All rights reserved</p>
+            <p>Dw아카데미 데이터 시각화 2회차</p>
+            <p>관리자 : 김원상 이건희 황승빈 조에스더</p>
+          </div>
         </div>
       </div>
     </section>
   </body>
   <script src="js/toggleNewMenu.js"></script>
-  <script src="js/login.js"></script>
+  <script src="js/event.js"></script>
 </html>

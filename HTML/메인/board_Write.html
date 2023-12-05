@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>스포츠 클라이밍 커뮤니티 - 로그인</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/board_Write.css" />
     <link rel="stylesheet" href="css/mainHeader.css" />
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <title>글쓰기</title>
   </head>
   <body>
     <header class="site__header">
@@ -21,12 +20,7 @@
         <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
           DW CLIMB<br />
           Community
-          <span
-            ><img
-              style="object-fit: contain"
-              src="클라이밍_로고.png"
-              alt="mainLogo"
-          /></span>
+          <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
         </h2>
       </a>
       <nav>
@@ -148,26 +142,30 @@
         <section class="overlay"></section>
       </nav>
     </header>
-    <section class="login">
-      <h2>로그인</h2>
-      <form action="#" method="POST" id="login-form">
-        <div class="form-group">
-          <label for="email">이메일</label>
-          <input type="email" id="email" name="email" required />
+    <div class="nav"></div>
+    <div class="container">
+      <h1 class="header">글 작성하기</h1>
+      <div class="main">
+        <div id="post-title">
+          <input type="text" placeholder="제목을 입력하세요." />
+          <div id="user">
+            <span>이름</span
+            ><input type="text" placeholder="이름을 입력하세요." />
+
+            <span>비밀번호</span
+            ><input type="password" placeholder="비밀번호를 입력하세요." />
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password">비밀번호</label>
-          <input type="password" id="password" name="password" required />
+        <textarea class="body" placeholder="내용을입력하세요"></textarea>
+        <div class="back-color">
+          <div id="save">
+            <span><input type="file" class="picture" /></span>
+            <button>발행</button>
+          </div>
         </div>
-        <button type="submit" class="btn-login">로그인</button>
-        <div class="form-ego">
-          <span
-            ><a href="signIn.html">회원가입 </a>
-            <a href="passward.html">/ 비밀번호 찾기</a></span
-          >
-        </div>
-      </form>
-    </section>
+      </div>
+    </div>
+
     <section class="footer">
       <div class="footer-main">
         <div class="footer-header">
@@ -195,10 +193,15 @@
             <li>자주묻는질문</li>
             <li>문의하기</li>
           </ul>
+          <div class="footer-name">
+            <p>Copyright © 2013 Daejeon Climb. All rights reserved</p>
+            <p>Dw아카데미 데이터 시각화 2회차</p>
+            <p>관리자 : 김원상 이건희 황승빈 조에스더</p>
+          </div>
         </div>
       </div>
     </section>
   </body>
+  <script src="js/board_Write.js"></script>
   <script src="js/toggleNewMenu.js"></script>
-  <script src="js/login.js"></script>
 </html>

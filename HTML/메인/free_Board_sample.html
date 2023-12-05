@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/free_Board.css" />
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="css/free_Board_sample.css" />
     <link rel="stylesheet" href="css/mainHeader.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>스포츠 클라이밍 커뮤니티 -자유게시판</title>
+    <title>스포츠 클라이밍 커뮤니티 - 자유게시판</title>
   </head>
   <body>
     <header class="site__header">
@@ -21,7 +21,18 @@
         <h2 style="font-weight: 700; margin-left: 1rem" class="brand">
           DW CLIMB<br />
           Community
-          <span><img src="클라이밍_로고.png" alt="mainLogo" /></span>
+          <span
+            ><img
+              style="
+                height: 60px;
+                width: 100%;
+                object-fit: contain;
+                margin-right: 0.5rem;
+                padding: 0.5rem;
+              "
+              src="클라이밍_로고.png"
+              alt="mainLogo"
+          /></span>
         </h2>
       </a>
       <nav>
@@ -33,6 +44,9 @@
                 <li>
                   <a href="climb.html">클라이밍이란?</a>
                 </li>
+                <!-- <li>
+                    <a href="#">무엇일까요~?</a>
+                  </li> -->
               </ul>
             </div>
           </li>
@@ -87,6 +101,7 @@
           <li><a class="menu-item" href="membership.html">회원 가입</a></li>
         </ul>
       </nav>
+      <!-- ⭐ hiddenTab transition -->
       <nav class="new-menu">
         <div class="logo">
           <i class="bx bx-menu menu-icon"></i>
@@ -179,190 +194,53 @@
               <input type="text" placeholder="검색어 입력" />
               <img
                 class="absolute"
-                style="width: 17px; top: 10px; right: 12px"
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
               />
             </p>
           </div>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <tbody id="item-list">
-              <tr class="thead">
-                <td>번호</td>
-                <td id="link">제목</td>
-                <td>작성자</td>
-                <td>작성일</td>
-                <td>조회수</td>
-                <td>추천수</td>
-              </tr>
-              <tr class="pin">
-                <td>
-                  <iconify-icon icon="bi:pin-fill"></iconify-icon>
-                </td>
-                <td id="link">
-                  <a href="free_Board_sample.html">
-                    [이벤트] 클라이머라면 200% 공감! <좋아하는 마음엔 실패가
-                    없지></a
-                  >
-                </td>
-                <td>CLMI클미</td>
-                <td>16:17</td>
-                <td>45</td>
-                <td>1</td>
-              </tr>
-              <tr class="pin">
-                <td>
-                  <iconify-icon icon="bi:pin-fill"></iconify-icon>
-                </td>
-                <td id="link">
-                  <a href="free_Board_2.html"
-                    >볼더랜드 블랙프라이데이 세일(~11/30)</a
-                  >
-                </td>
-                <td>볼더랜드</td>
-                <td>2023-11-23</td>
-                <td>357</td>
-                <td>10</td>
-              </tr>
-              <tr class="pin">
-                <td>
-                  <iconify-icon icon="bi:pin-fill"></iconify-icon>
-                </td>
-                <td id="link">
-                  <a href="free_Board_3.html"
-                    >요즘 인스타 라스포르티바 광고 조심하세요</a
-                  >
-                </td>
-                <td>스파이더맨</td>
-                <td>2023-11-23</td>
-                <td>190</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td id="link">
-                  <a href="">
-                    처음 클라이밍 하는 지인에게 보여드리기 좋은 영상&정보
-                    [55]</a
-                  >
-                </td>
-                <td>노원구 빨간바지</td>
-                <td>2022-11-30</td>
-                <td>2,463</td>
-                <td>190</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td id="link">
-                  <a href=""
-                    >필독📢클라이밍에 미치다 카페 게시판 이용 및 등업 안내
-                    [1478]</a
-                  >
-                </td>
-                <td>매니저A</td>
-                <td>2023-06-18</td>
-                <td>987</td>
-                <td>9</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td id="link"><a href=""> 마그네슘 스프레이??? </a></td>
-                <td>매니저A</td>
-                <td>2023-11-23</td>
-                <td>265</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td id="link"><a href="">5주년 볼더링 파티 초대합니다 </a></td>
-                <td>무bbbbb</td>
-                <td>2023.11.16</td>
-                <td>338</td>
-                <td>25</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="writing">
-            <button id="write">
-              <a href="board_Write.html">
-                <span>글쓰기</span>
-                <iconify-icon
-                  class="write-icon"
-                  icon="fluent:pen-20-filled"
-                ></iconify-icon>
-              </a>
-            </button>
+          <h3>
+            [이벤트] 클라이머라면 200% 공감! <좋아하는 마음엔 실패가 없지>
+          </h3>
+
+          <div class="memo">
+            <div class="memo-wrapper">
+              <p class="memo-text">CLM클미</p>
+              <span class="iconify" data-icon="ph:eye-bold"></span>45|<span
+                class="iconify"
+                data-icon="icon-park-outline:good-two"
+              ></span
+              >1
+              <div class="memo-item">16:17</div>
+            </div>
+
+            <img src="img/memo.jpg" alt="#" class="memo-image" />
+            <img src="img/memo2.jpg" alt="#" class="memo-image" />
+            <img src="img/memo3.jpg" alt="#" class="memo-image" />
+            <p class="memo-paper">
+              문화체육관광부, 국민체육진흥공단, (사)대한산악연맹은
+              하위법령인‘인공암벽장업’의 시설기준, 체육지도자 배치기준,
+              안전·위생기준 등의 시행령 및 시행규칙 개정을 위해 전국 실내외
+              인공암벽장을 대상으로 실태조사를 실시하였습니다.
+            </p>
           </div>
+
+          <div class="sub-container">
+            <div class="sub-text">
+              <div class="sub-left">
+                댓글
+                <b class="orangered">0</b>
+              </div>
+            </div>
+            <div class="sub-sub-container">
+              <div id="sub-sub-text">등록된 댓글이 없습니다.</div>
+            </div>
+          </div>
+
           <div class="paging">
             <ul>
               <li id="selectNumber"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
+              <li><a href="free_Board_2.html">2</a></li>
+              <li><a href="free_Board_3.html">3</a></li>
               <li><a href="#">4</a></li>
               <li><a href="#">5</a></li>
               <li class="next pager">
@@ -415,6 +293,9 @@
         </div>
       </div>
     </section>
-    <script src="js/toggleNewMenu.js"></script>
   </body>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="js/toggleNewMenu.js"></script>
 </html>

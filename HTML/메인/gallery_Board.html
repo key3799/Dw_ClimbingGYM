@@ -10,7 +10,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>사진게시판</title>
+    <title>스포츠 클라이밍 커뮤니티 -사진게시판</title>
   </head>
   <body>
     <header class="site__header">
@@ -120,17 +120,12 @@
                 </a>
               </li>
               <li class="list">
-                <a href="#" class="nav-link">
-                  <span class="link">My Page</span>
-                </a>
-              </li>
-              <li class="list">
                 <a href="main_Board.html" class="nav-link">
                   <span class="link">Notice</span>
                 </a>
               </li>
               <li class="list">
-                <a href="#" class="nav-link">
+                <a href="mypage.html" class="nav-link">
                   <span class="link">My Page</span>
                 </a>
               </li>
@@ -190,7 +185,7 @@
                 <img src="img/gallery/1.jpg" alt="동호회사진" />
                 <div class="explan">
                   <p id="cm-title">천안 우동소</p>
-                  <p id="cm-day">2023/11/29</p>
+                  <p id="cm-day">2023/11/22</p>
                 </div>
               </figure>
             </div>
@@ -199,7 +194,7 @@
                 <img src="img/gallery/2.jpg" alt="동호회사진" />
                 <div class="explan">
                   <p id="cm-title">딩가동</p>
-                  <p id="cm-day">2023/11/29</p>
+                  <p id="cm-day">2023/11/23</p>
                 </div>
               </figure>
             </div>
@@ -208,7 +203,7 @@
                 <img src="img/gallery/3.jpg" alt="동호회사진" />
                 <div class="explan">
                   <p id="cm-title">조아조아클라이밍</p>
-                  <p id="cm-day">2023/11/29</p>
+                  <p id="cm-day">2023/11/26</p>
                 </div>
               </figure>
             </div>
@@ -217,7 +212,7 @@
                 <img src="img/gallery/4.jpg" alt="동호회사진" />
                 <div class="explan">
                   <p id="cm-title">올라가라더높게</p>
-                  <p id="cm-day">2023/11/29</p>
+                  <p id="cm-day">2023/11/27</p>
                 </div>
               </figure>
             </div>
@@ -225,8 +220,8 @@
               <figure>
                 <img src="img/gallery/5.jpg" alt="동호회사진" />
                 <div class="explan">
-                  <p id="cm-title">스파이더맨이꿈</p>
-                  <p id="cm-day">2023/11/29</p>
+                  <p id="cm-title">스파이더맨이 꿈</p>
+                  <p id="cm-day">2023/11/27</p>
                 </div>
               </figure>
             </div>
@@ -243,8 +238,8 @@
               <figure>
                 <img src="img/gallery/7.jpg" alt="동호회사진" />
                 <div class="explan">
-                  <p id="cm-title">~~~~</p>
-                  <p id="cm-day">2023/11/29</p>
+                  <p id="cm-title">정상을 향해!</p>
+                  <p id="cm-day">2023/12/1</p>
                 </div>
               </figure>
             </div>
@@ -252,46 +247,30 @@
               <figure>
                 <img src="img/gallery/8.jpg" alt="동호회사진" />
                 <div class="explan">
-                  <p id="cm-title">~~~~</p>
-                  <p id="cm-day">2023/11/29</p>
+                  <p id="cm-title">고소공포증 있어요</p>
+                  <p id="cm-day">2023/12/4</p>
                 </div>
               </figure>
             </div>
-            <div class="img-box">
-              <figure>
-                <img src="img/gallery/9.jpg" alt="동호회사진" />
-                <div class="explan">
-                  <p id="cm-title">~~~~</p>
-                  <p id="cm-day">2023/11/29</p>
-                </div>
-              </figure>
-            </div>
-            <div class="img-box">
-              <figure>
-                <img src="img/gallery/10.avif" alt="동호회사진" />
-                <div class="explan">
-                  <p id="cm-title">~~~~</p>
-                  <p id="cm-day">2023/11/29</p>
-                </div>
-              </figure>
-            </div>
-            <div class="img-box">
-              <figure>
-                <img src="img/gallery/11.jpg" alt="동호회사진" />
-                <div class="explan">
-                  <p id="cm-title">~~~~</p>
-                  <p id="cm-day">2023/11/29</p>
-                </div>
-              </figure>
-            </div>
-            <div class="img-box">
-              <figure>
-                <img src="img/gallery/12.webp" alt="동호회사진" />
-                <div class="explan">
-                  <p id="cm-title">~~~~</p>
-                  <p id="cm-day">2023/11/29</p>
-                </div>
-              </figure>
+          </div>
+          <div class="add-picture">
+            <button id="add-modal">사진 추가 하기</button>
+          </div>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <span><input type="file" id="image-input" /></span>
+
+              <p>
+                <input
+                  type="text"
+                  id="image-name"
+                  placeholder="제목을 입력하세요"
+                />
+              </p>
+              <p><input type="date" id="upload-day" /></p>
+
+              <button id="add-image">게시물 추가</button>
             </div>
           </div>
         </div>
@@ -334,4 +313,5 @@
     </section>
   </body>
   <script src="js/toggleNewMenu.js"></script>
+  <script src="js/gallery_Board.js"></script>
 </html>

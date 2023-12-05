@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+  }
+  
+.ul-footer{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+  .logo {
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+  }
+  
+  .logo>a> img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .find-password {
+    background-color: #fff;
+    padding: 20px;
+    margin: 281px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .find-password>h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-find-password {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  .footer{
+    background-color: #333;
+    color: white;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 30px 100px
+}
+
+
+.footer-icon{
+    padding: 10px 0px 10px 0px;
+    font-size: 30px;    
+}
+
+.sns{
+    color: white;
+}
+
+.footer-header>h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.footer-body> ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 15px;
+    margin-right: 80px;
+}
+
+
+.footer-body> ul> li{
+    margin-left: 2rem;
+}
+
+.footer-body{
+    height: 50px;
+    margin: 5px 0px 0px 80px;
+}
+
+
+

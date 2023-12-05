@@ -147,8 +147,13 @@ a {
   text-decoration-line: none;
 }
 
-.pin {
-  background-color: aliceblue;
+.pin td{
+  background-color: #333;
+  color: #ffffffda;
+}
+
+.pin > #link > a{
+  color: #ffffffda;
 }
 
 

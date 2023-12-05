@@ -1,31 +1,29 @@
-const listItem=document.querySelectorAll('.list-item')
-const text = document.querySelector(".text");
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.list-item');
+  
+    accordionItems.forEach(item => {
+      const header = item.querySelector('.item-name');
+      const content = item.querySelector('.video');
+  
+      header.addEventListener('click', () => {
+        item.classList.toggle('selected'); 
+        content.style.display = item.classList.contains('selected') ? 'block' : 'none';
+      });
+    });
+  });
 
-for(let i=0; i < listItem.length; i++){
-    listItem[i].addEventListener('click',() =>{
-        for(let j=0; j < listItem.length; j++){
-        listItem[j].classList.remove('selected')
-        }
-        listItem[i].classList.add('selected')
-    })
-}
-
-// const box = document.querySelector(".box");
-// const text = document.querySelector(".text");
-// const overlay = document.querySelector(".overlay");
-// // 모달창이 열려있는지 여부를 저장하는 전역변수
-// let isModalOpen = false;
-
-// function onClick() {
-//   if (isModalOpen) {
-//     isModalOpen = false;
-//     box.classList.remove("modal");
-//     text.classList.remove("visible");
-//   } else {
-//     isModalOpen = true;
-//     box.classList.add("modal");
-//     setTimeout(() => {
-//       text.classList.add("visible");
-//     }, 500);
-//   }
-// }
+  // JavaScript 코드
+document.addEventListener('DOMContentLoaded', function() {
+    const tipItem = document.querySelector('.click');
+  
+    tipItem.addEventListener('click', function() {
+      const content = document.querySelector('.list-item.selected .content');
+  
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    });
+  });
+  
