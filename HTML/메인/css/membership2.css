@@ -28,17 +28,19 @@ input[type="password"] {
 
 input[type="text"]:focus,
 input[type="password"]:focus {
-  box-shadow: 0 0 0 3px #ff9900;
+  box-shadow: 0 0 0 3px #333;
   outline: none;
+  margin-left: 3px;
 }
 
 input[type="button"] {
-  background-color: rgb(0, 0, 0);
+  background-color: #333;
   border: 0;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   color: white;
   cursor: pointer;
+  margin-left: 3px;
 }
 
 select {
@@ -78,7 +80,7 @@ tbody {
 }
 
 .btn2 {
-  background-color: #ff9900;
+  background-color: #333;
   border: 0;
   padding: 0.5rem 1rem;
   border-radius: 4px;
