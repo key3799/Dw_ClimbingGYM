@@ -34,7 +34,7 @@ main {
 
 .all-container{
     width: 100%;
-    margin-top: 250px;
+    margin-top: 275px;
     position: relative;
 }
 .site__header {
@@ -435,7 +435,6 @@ span>strong{
   position: absolute;
   top: 520px;
   left: 478px;
- 
   font-weight: 700;
 }
 
@@ -527,8 +526,8 @@ font-family: 'Roboto', sans-serif;
 }
 
 .photo-header{
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: 3rem;
+  font-size: 2rem;
 }
 
 .banner-tab {
@@ -548,8 +547,9 @@ font-family: 'Roboto', sans-serif;
 }
 .best-photos {
   width: 1128px;
-  height: 600px;
+  height: 650px;
   margin: 5rem auto;
+  padding-bottom: 80px;
   background-color: #333;
   color: white;
   display: flex;
@@ -623,7 +623,7 @@ font-family: 'Roboto', sans-serif;
   align-items: center;
   background-color: #ff9900;
   width: 100%;
-  height: 250px;
+  height: 200px;
   font-size: 46px;
   font-weight: 700;
   color: white;
@@ -634,10 +634,10 @@ font-family: 'Roboto', sans-serif;
 }
 
 footer {
-  background-color: black;
+  background-color: #333;
   color: white;
   font-size: 14px;
-  height: 250px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;

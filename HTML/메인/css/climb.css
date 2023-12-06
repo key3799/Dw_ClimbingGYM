@@ -42,6 +42,31 @@ figure {
   margin-bottom: 1rem;
 }
 
+.body-footer{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.body-footer>.gallery{
+  text-align: start;
+}
+
+.gallery{
+  font-size: 20px;
+  border: 3px solid #333;
+  padding:20px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.gallery:hover{
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+
+}
+
 .footer {
   width: 100%;
   display: flex;
@@ -56,7 +81,7 @@ figure {
 .footer-main {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0px 0px 80px;
+  padding: 30px 0px 30px 80px;
   background-color: #333;
 }
 
@@ -108,4 +133,56 @@ h3 {
   font-weight: 600;
   text-align: center;
  margin: 3rem 3rem 3rem 23%;
+}
+
+#arrowAnim {
+  position: absolute;
+  width: 30vw;
+  height: 23vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 350px;
+  bottom: 5px;
+}
+
+.arrow {
+  width: 1.2vw;
+  height: 1.2vw;
+  border: 0.3vw solid;
+  border-color: black transparent transparent black;
+  transform: rotate(135deg);
+}
+
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite; 
+          animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(10vw); }	
+   20% { opacity:1; transform: translateX(7vw); }	
+   80% { opacity:1; transform: translateX(3vw); }	
+  100% { opacity:0; transform: translateX(1vw); }	
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateX(10vw); }	
+   20% { opacity:1; transform: translateX(7vw); }	
+   80% { opacity:1; transform: translateX(3vw); }	
+  100% { opacity:0; transform: translateX(1vw); }	
 }
