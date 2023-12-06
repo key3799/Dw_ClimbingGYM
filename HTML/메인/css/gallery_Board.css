@@ -51,7 +51,6 @@
   background-color: #f5f5f5;
 }
 
-
 .click {
   color: #ff9900;
 }
@@ -164,10 +163,11 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fefefe;
-  padding: 25px 20px 25px 20px;
+  padding: 25px 20px 25px 30px;
   border: 1px solid #888;
   z-index: 1;
   height: 200px;
+  width: 350px;
 }
 
 .modal-content {

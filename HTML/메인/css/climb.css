@@ -62,9 +62,8 @@ figure {
 
 .gallery:hover{
   cursor: pointer;
-  background-color: #333;
-  color: white;
-
+  background-color: #ff9900;
+  color: #fff;
 }
 
 .footer {
