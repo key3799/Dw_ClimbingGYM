@@ -81,6 +81,11 @@ body {
 .location li {
   list-style: none;
   cursor: pointer;
+  border: 3px solid #131313;
+  padding: 3px;
+  margin: 1rem;
+  width: 3rem;
+  font-weight: bold;
 }
 
 #locationWrapper {
@@ -97,38 +102,37 @@ body {
   display: block;
 }
 
-
 /* footer */
 
-.footer{
+.footer {
   display: flex;
   margin-top: 100px;
   background-color: black;
   color: white;
 }
 
-.footer-main{
+.footer-main {
   display: flex;
   justify-content: space-between;
   padding: 50px 0px 50px 80px;
   /* width: 100%; */
 }
 
-.footer-icon{
+.footer-icon {
   padding: 30px;
-  font-size: 30px;    
+  font-size: 30px;
 }
 
-.sns{
+.sns {
   color: white;
 }
 
-.footer-header > h1{
+.footer-header > h1 {
   margin-bottom: 10px;
   font-size: 40px;
 }
 
-.footer-body > ul{
+.footer-body > ul {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -136,20 +140,18 @@ body {
   margin-right: 80px;
 }
 
-
-.footer-body > ul > li{
+.footer-body > ul > li {
   margin-left: 2rem;
 }
 
-.footer-body{
+.footer-body {
   height: 50px;
   margin: 5px 0px 0px 80px;
 }
 
-.footer-name{
+.footer-name {
   padding-top: 30px;
   font-size: 10px;
   text-align: end;
   margin-right: 80px;
 }
-
